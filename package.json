@@ -1,7 +1,7 @@
 {
-  "name": "dev-tips-starter-kit",
+  "name": "LDK Starter Kit",
   "version": "1.0.0",
-  "description": "Simple structure for a simple start to a simple site.",
+  "description": "The LDK ground up build kit",
   "main": "build/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,12 +10,12 @@
     "boilerplate",
     "seed",
     "starter-kit",
-    "devtips",
+    "LDK Creatives",
     "sass",
     "jade",
     "gulp"
   ],
-  "author": "Maikel Rivero Dorta <mriverodorta@gmail.com>",
+  "author": "LDKruyer <kruyerl@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.7.11",

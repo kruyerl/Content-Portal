@@ -1,25 +1,17 @@
-# DevTips-Starter-Kit Gulp Version
-
-Use this as a simple structure for a simple start to a simple site.
-
-Visit [DevTipsStarterKit.com](http://devtipsstarterkit.com) for more info.
-
-![Watch the video on youtube](https://github.com/DevTips/DevTips-Starter-Kit/blob/master/assets/img/starter-kit-cover.jpg?raw=true)
+# Currant Technologies - Content Portal
 
 ## Requeriments
-This project have some requeriments you need to meet in order to compile it. First of all, you need NodeJS in order to run javascript on the console, you can go to the [NodeJS](http://nodejs.rg) site and follow trough the installation process. After you get the `node` command on the console, you need to install Gulp and Bower globally with the following command.
+This project have some requirements you need to meet in order to compile it. First of all, you need NodeJS in order to run javascript on the console, you can go to the [NodeJS](http://nodejs.rg) site and follow trough the installation process. After you get the `node` command on the console, you need to install Gulp and Bower globally with the following command.
 
 ```
 node install -g gulp bower
 ```
 
-Gulp is the one that will run all the compilation, watchers and others tasks. Bower will get the dependencies for the client side like jQuery. Those are the only requeriments to run this project.
+Gulp is the one that will run all the compilation, watchers and others tasks. Bower will get the dependencies for the client side like jQuery. Those are the only requirements to run this project.
 
 ## Install
-In order to start using the project you need to clone it to your pc. You can download the the zip version from [here](#) or clone the project with the git command.
-```
-git clone -b Gulp-Starter-Kit --single-branch https://github.com/mriverodorta/DevTips-Starter-Kit.git project-name
-git clone https://blablabla.github.com new-project
+In order to start using the project you need to clone it to your pc. You can download the the zip version from [here](https://github.com/kruyerl/Content-Portal) or clone the project with the git command.
+
 ```
 After you have it on you pc, you need to go in the console to the project folder and execute the following command to gather all the dependencies.
 ```
@@ -62,7 +54,8 @@ The project have a very simple and flexible structure. If the default place for 
 │   ├───sass  -> Sass styles
 │   │   └───main.sass -> Main file in where all other sass files should be included.
 │   ├───vendors -> Vendors folder for all the dependencies (Managed by Bower)
-│   └───views -> Templates directory for Pug files
+│   ├───views -> Templates directory for Pug files
+    │   ├───Snippets
 │   │   └───index.pug
 ├───.bowerrc -> Define where the dependencies will be installed
 ├───bower.json -> Bower configuration file for manage project dependencies
