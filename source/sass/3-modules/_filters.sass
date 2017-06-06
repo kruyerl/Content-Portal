@@ -1,0 +1,31 @@
+.mediaFilters
+  box-sizing: border-box
+  padding: 8px
+  margin-bottom: 1.5em
+  .mdl-tabs
+    box-sizing: border-box
+    background-color: $brand-primary-black
+    margin-top: 2em
+
+
+
+
+
+    .mdl-tabs__tab
+      width: 100%
+      i.material-icons
+        color: $brand-white
+        margin-top: 8px
+      &.is-active
+        background-color: lighten($brand-primary-black, 5%)
+        &::after
+          background-color: $brand-primary !important
+    .mdl-tabs__tab-bar
+      border-bottom: 1px solid transparent
+      width: 100%
+
+
+  .mdl-tabs__panel
+    background-color: lighten($brand-primary-black, 10%)
+    margin-top: 0px
+    padding: 1em
