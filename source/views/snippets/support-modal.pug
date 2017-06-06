@@ -1,0 +1,18 @@
+.modal#Support-modal
+  .support-modal-overlay#Support-modal-overlay
+  section.support-modal
+    i.support-modal-close#Support-modal-close(class="material-icons md-30") close
+  
+    
+    h3 How can we help?
+    h6 We are looking forward to hearing from you
+    form#SupportForm(action="/action_page.php")
+      input(list="email-activity" name="activity" placeholder="Content Issue:")
+      datalist( id="email-activity")
+        option( value="None")
+        option( value="Often")
+        option( value="Everyday")
+        option( value="All Day")
+      
+      textarea(name="message" form="SupportForm" placeholder="Message...")
+      input(type="submit" value="Submit") 

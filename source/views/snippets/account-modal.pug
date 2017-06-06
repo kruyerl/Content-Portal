@@ -1,0 +1,25 @@
+.modal#Account-modal
+  .account-modal-overlay#Account-modal-overlay
+  section.account-modal
+    i.account-modal-close#Account-modal-close(class="material-icons md-30") close
+  
+    .avatar-container
+      .avatar
+        img(src="http://fillmurray.com/200/300")
+      
+      h4 David Ryan
+    .details-container
+    
+      form(action="/action_page.php")
+        label(for="email") Email
+        input(type="email" name="email" id="email" placeholder="david@rhinoafrica.com")
+        label(for="cellphone") Cellphone
+        input(type="tel" name="cellphone" id="cellphone" placeholder="+27 (0)21 234 1234")
+        label(for="activity") Summary Activity Email:
+        input(list="email-activity" name="activity" placeholder="None")
+        datalist( id="email-activity")
+          option( value="None")
+          option( value="Often")
+          option( value="Everyday")
+          option( value="All Day")
+        input(type="submit" value="Submit") 

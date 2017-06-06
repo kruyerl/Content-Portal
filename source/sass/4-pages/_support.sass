@@ -1,0 +1,70 @@
+.modal#Support-modal
+  z-index: 9000
+  .support-modal-overlay
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    height: 100vh
+    width: 100vw
+    cursor: pointer
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  height: 100vh
+  width: 100vw
+  background-color: rgba($brand-primary-black, 0.5)
+  display: flex
+  justify-content: center
+  align-items: center
+  opacity: 0
+  pointer-events: none
+  transition: opacity 200ms ease-in-out
+
+  section.support-modal
+    background-color: $brand-white
+    padding: 24px
+    box-shadow: 0px 2px 24px 0px rgba($brand-black,0.5)
+    display: flex
+    position: relative
+    flex-wrap: wrap
+    width: 400px
+    form
+      width: 100%
+      margin-top: 1em
+    .support-modal-close
+      position: absolute
+      top: -40px
+      right: -40px
+      color: $brand-black
+      cursor: pointer
+
+
+  &.is-active
+    opacity: 1
+    pointer-events: auto
+
+    section.support-modal
+      animation: slideIn 300ms cubic-bezier(0.42, 0, 0.4, 1.51)
+
+@keyframes slideIn
+  0%
+    transform: translate(0, -25px)
+
+  100%
+    transform: translate(0, 0px)
+
+
+
+@media screen and (max-width: 600px)
+  .modal#Support-modal
+    position: fixed
+    section.support-modal
+      width: 70vw
+      justify-content: center
+      i.support-modal-close
+        top: 10px
+        right: 10px

@@ -1,0 +1,27 @@
+body.page-loading
+  display: flex
+  width: 100vw
+  height: 100vh
+  justify-content: center
+  align-items: center
+  background-color: $brand-primary-black
+  color: $brand-white
+  section
+    display: flex
+    justify-content: center
+    align-items: center
+    i
+      animation: rotater 1.5s linear infinite
+    h4
+      margin: 0px
+      margin-left: 24px
+      color: $brand-white
+      text-transform: uppercase
+
+
+@keyframes rotater
+  0%
+    transform: rotate(0deg)
+
+  100%
+    transform: rotate(360deg)

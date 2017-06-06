@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+html(lang="en")
+  include ./snippets/head.pug
+  body.page-landing
+    include ./snippets/nav.pug
+    include ./snippets/account-modal.pug
+    include ./snippets/support-modal.pug
+    
+    .slideshow(data-slides='[\
+      "assets/img/fanart/banner1.jpg",\
+      "assets/img/fanart/banner2.jpg",\
+      "assets/img/fanart/banner3.jpg"\
+      ]')
+      
+    section.hero
+      card.home-card
+        h3.page-title Welcome Home <br> David Ryan
+        h6 Manage your media library from here
+        form#SearchForm(action="/action_page.php")
+          input#SearchInput(type="input")
+          i#SearchFormIcon(class="material-icons md-30") search
+          
+        include ./snippets/navhome.pug
+
+    section.content-container
+      
+      h4 Recently Added Movies
+      .media-card-slide
+        a(href="")
+          .card.media-card.no-details
+            img(src="https://s-media-cache-ak0.pinimg.com/736x/06/cb/33/06cb338efcf3ac37a90caad05fd356a2.jpg")  
+        a(href="")
+          .card.media-card.no-details
+            img(src="https://s-media-cache-ak0.pinimg.com/736x/06/cb/33/06cb338efcf3ac37a90caad05fd356a2.jpg") 
+        a(href="")
+          .card.media-card.no-details
+            img(src="https://s-media-cache-ak0.pinimg.com/736x/06/cb/33/06cb338efcf3ac37a90caad05fd356a2.jpg")  
+        a(href="")
+          .card.media-card.no-details
+            img(src="https://s-media-cache-ak0.pinimg.com/736x/06/cb/33/06cb338efcf3ac37a90caad05fd356a2.jpg") 
+        a(href="")
+          .card.media-card.no-details
+            img(src="https://s-media-cache-ak0.pinimg.com/736x/06/cb/33/06cb338efcf3ac37a90caad05fd356a2.jpg")  
+        a(href="")
+          .card.media-card.no-details
+            img(src="https://s-media-cache-ak0.pinimg.com/736x/06/cb/33/06cb338efcf3ac37a90caad05fd356a2.jpg") 
+        a(href="")
+          .card.media-card.no-details
+            img(src="https://s-media-cache-ak0.pinimg.com/736x/06/cb/33/06cb338efcf3ac37a90caad05fd356a2.jpg")  
+        a(href="")
+          .card.media-card.no-details
+            img(src="https://s-media-cache-ak0.pinimg.com/736x/06/cb/33/06cb338efcf3ac37a90caad05fd356a2.jpg")
+        a(href="")
+          .card.media-card.no-details
+            img(src="https://s-media-cache-ak0.pinimg.com/736x/06/cb/33/06cb338efcf3ac37a90caad05fd356a2.jpg")  
+        a(href="")
+          .card.media-card.no-details
+            img(src="https://s-media-cache-ak0.pinimg.com/736x/06/cb/33/06cb338efcf3ac37a90caad05fd356a2.jpg") 
+        a(href="")
+          .card.media-card.no-details
+            img(src="https://s-media-cache-ak0.pinimg.com/736x/06/cb/33/06cb338efcf3ac37a90caad05fd356a2.jpg")  
+        a(href="")
+          .card.media-card.no-details
+            img(src="https://s-media-cache-ak0.pinimg.com/736x/06/cb/33/06cb338efcf3ac37a90caad05fd356a2.jpg")
+        
+      
+      
+    include ./snippets/script.pug

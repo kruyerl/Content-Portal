@@ -1,0 +1,29 @@
+{
+  "name": "LDK Creatives Base Template",
+  "version": "1.0.0",
+  "authors": [
+    "Luke David Kruyer <luke@ldkcreatives.com>"
+  ],
+  "description": "Simple structure for a simple start to a simple site.",
+  "main": "build/index.html",
+  "keywords": [
+    "boilerplate",
+    "seed",
+    "LDKCreatives",
+    "sass",
+    "jade",
+    "gulp"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "source/vendors",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}

@@ -1,0 +1,40 @@
+nav
+  display: flex
+  flex-direction: row-reverse
+  justify-content: space-between
+  padding: 20px
+
+  .right-nav
+    display: flex
+    flex-direction: row
+    align-items: center
+    .avatar
+      width: 60px
+      height: 60px
+      border-radius: 50%
+      overflow: hidden
+      margin-left: 20px
+      box-shadow: 0px 0px 10px rgba($brand-black, 0.5)
+      a
+        img
+          width: 60px
+    .links
+      display: flex
+      i
+        color: $brand-white
+        text-shadow: 0px 0px 10px rgba($brand-black, 0.5)
+        cursor: pointer
+        transition: color 200ms ease-in-out
+        &:hover
+          color: $brand-primary
+        &.mdl-badge
+          &:after
+            background-color: $brand-primary
+
+
+  .back-links
+    display: flex
+    flex-direction: row
+    align-items: center
+    i
+      margin-right: 20px

@@ -1,0 +1,111 @@
+//	Headings
+h1, h2, h3, h4, h5, h6
+  color: $brand-black
+  margin: 0
+
+.Display, h1
+  font-family: 'DINPro-Light'
+  font-size: 8em
+  font-weight: normal
+  line-height: 1.2
+  letter-spacing: -1px
+  margin: 0 0 0.6em 0
+  &.thick
+    font-family: 'DINPro-Bold'
+.SubDisplay, h2
+  font-family: 'DINPro-Light'
+  font-size: 6em
+  font-weight: normal
+  line-height: 1.2
+  letter-spacing: -1px
+  margin: 0 0 0.6em 0
+  &.thick
+    font-family: 'DINPro-Bold'
+
+.Headline, h3
+  font-family: 'DINPro-Light'
+  font-size: 4em
+  line-height: 1.2
+  margin: 0 0 0.6em 0
+  &.thick
+    font-family: 'DINPro-medium'
+
+.Title, h4
+  font-family: 'DINPro-Light'
+  font-size: 2em
+  line-height: 1.2
+  margin: 0 0 0.6em 0
+  &.thick
+    font-family: 'DINPro-Bold'
+
+.SubHeading, h5
+  font-family: 'DINPro-Light'
+  font-size: 1.2em
+  line-height: 1.2
+  margin: 0 0 0.9em 0
+  &.thick
+    font-family: 'DINPro-Bold'
+
+
+// Basic Text Style
+
+p
+  font-family: 'DINPro-Regular'
+  margin: 0 0 1.45em 0
+  line-height: 1.45
+  max-width: 500px
+  &.thick
+    font-family: 'DINPro-Bold'
+
+.caption, small, caption
+  font-family: 'DINPro-Light'
+  font-size: 0.75em
+  line-height: 1.2
+
+a,.anchor
+  font-family: 'DINPro-Medium'
+  line-height: 1.45
+
+
+em
+  font-style: italic
+
+strong
+  font-weight: bold
+
+hr
+  border: solid #ddd
+  border-width: 1px 0 0
+  clear: both
+  margin: 10px 0 30px
+  height: 0
+
+
+@media(max-width: 700px)
+
+  h1
+    font-size: 6rem
+  h2
+    font-size: 4rem
+  h3
+    font-size: 3rem
+  h4
+    font-size: 2rem
+  h5
+    font-size: 1.5rem
+  p
+    font-size: 1rem
+
+
+h1, h2, h3, h4, h6, p, .small, .caption
+  color: rgba($brand-black, 0.9)
+  &.secondaryTxt
+    opacity: 0.6
+  &.disabledTxt
+    opacity: 0.3
+  &.brandTxt
+    color: rgba($brand-black, 0.9)
+
+h1, h2, h3, h4, h5, p, a, .small, .caption
+  &.centertxt
+    text-align: center
