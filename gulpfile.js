@@ -1,5 +1,5 @@
 /**
- * Devtips Starter Kit Gulp configuration file
+ * LDK Creatives Starter Kit Gulp configuration file
  * Feel free to modify this file as you need
  * if you find any bug or error, please submit an issue
  */
@@ -216,4 +216,3 @@ gulp.task('default', ['help']);
  function log(msg) {
    console.log(msg);
 }
-
