@@ -1,5 +1,5 @@
 {
-  "name": "LDK Starter Kit",
+  "name": "Devtips Starter Kit",
   "version": "1.0.0",
   "description": "The LDK ground up build kit",
   "main": "build/index.html",
@@ -37,5 +37,8 @@
     "gulp-strip-debug": "^1.0.2",
     "gulp-uglify": "^1.2.0",
     "jshint-stylish": "^2.0.1"
+  },
+  "dependencies": {
+    "histoslider": "^1.0.1"
   }
 }

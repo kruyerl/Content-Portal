@@ -1,9 +1,8 @@
 .card.media-card
   position: relative
-  box-shadow: 0px 2px 5px 0px rgba($brand-black,0.5)
+  box-shadow: 0px 2px 10px 0px rgba($brand-black,0.95)
   overflow: hidden
   border-radius: 2px
-  background-color: $brand-white
   &.no-details
     img
       margin-bottom: 0px
@@ -22,14 +21,22 @@
     z-index: 2
     background-color: $brand-white
     box-shadow: 0px -1px 5px 0px rgba($brand-black,0.5)
-    height: auto
-    max-height: 36px
+    height: 36px
     transition: all 500ms ease
-    button.heading
-      color: $brand-primary-black
-      text-align: left
-      height: auto
-      line-height: 36px
+    .heading-container
+      height: 36px
+      display: flex
+      align-items: center
+      flex-wrap: nowrap
+      white-space: nowrap
+      padding: 0px 16px
+      margin-right: 16px
+      overflow: hidden
+
+      a
+        color: $brand-primary-black
+        font-weight: bold
+        flex: 1
     p
       padding-left: 16px
       padding-right: 16px
@@ -40,7 +47,21 @@
       justify-content: space-between
       button
         font-size: 12px
+        @extend a
 
   &:hover
     .details
-      max-height: 100%
+      height: auto
+
+
+      .heading-container
+        height: auto
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-wrap: wrap
+        word-wrap: normal
+        padding: 8px 16px
+        margin-right: 0px
+        overflow: visible
+        white-space: normal
