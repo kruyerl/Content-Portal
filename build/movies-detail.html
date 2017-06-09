@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Currant - Content Portal Site </title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <link rel="shortcut icon" href="./assets/img/favicons/favicon.ico"/>
+    <link rel="stylesheet" href="vendors/mdl/material.min.css"/>
+    <link rel="stylesheet" href="vendors/nstSlider/jquery.nstSlider.css"/>
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  </head>
+  <body class="media-details">
+    <nav>
+      <div class="right-nav">
+        <div class="links"><i class="material-icons md-30" id="Support-modal-selector">live_help</i>
+          <div class="notifications"><i class="material-icons md-30 mdl-badge mdl-badge--overlap" id="Notifications-modal-selector" data-badge="0">inbox</i>
+            <div class="notification-container" id="Notifications-modal">
+              <div class="notification-arrow"></div>
+              <div id="card-container"><a href="#">   
+                  <card>
+                    <div class="avatar"><img src="http://fillmurray.com/200/300"/><i class="material-icons md-22">notifications_none</i></div>
+                    <div class="details-container"><span class="notifications-label">Notification label</span><span class="notifications-caption">Notification Description</span></div>
+                  </card></a><a href="#">   
+                  <card>
+                    <div class="avatar"><img src="http://fillmurray.com/200/300"/><i class="material-icons md-22">notifications_none</i></div>
+                    <div class="details-container"><span class="notifications-label">Notification label</span><span class="notifications-caption">Notification Description</span></div>
+                  </card></a><a href="#">   
+                  <card>
+                    <div class="avatar"><img src="http://fillmurray.com/200/300"/><i class="material-icons md-22">notifications_none</i></div>
+                    <div class="details-container"><span class="notifications-label">Notification label</span><span class="notifications-caption">Notification Description</span></div>
+                  </card></a><a href="#">   
+                  <card>
+                    <div class="avatar"><img src="http://fillmurray.com/200/300"/><i class="material-icons md-22">notifications_none</i></div>
+                    <div class="details-container"><span class="notifications-label">Notification label</span><span class="notifications-caption">Notification Description</span></div>
+                  </card></a></div>
+            </div>
+            <div class="notification-modal-overlay" id="Notification-modal-overlay"></div>
+          </div>
+        </div>
+        <div class="avatar" id="Account-modal-selector"><a href="#"><img src="http://fillmurray.com/200/300"/></a></div>
+      </div>
+      <div class="back-links"><a href="/index.html"><i class="material-icons md-30">keyboard_backspace</i></a><a href="/index.html"><i class="material-icons md-30">home</i></a></div>
+    </nav>
+    <div class="modal" id="Account-modal">
+      <div class="account-modal-overlay" id="Account-modal-overlay"></div>
+      <section class="account-modal"><i class="account-modal-close material-icons md-30" id="Account-modal-close">close</i>
+        <div class="avatar-container">
+          <div class="avatar"><img src="http://fillmurray.com/200/300"/></div>
+          <h4>David Ryan</h4>
+        </div>
+        <div class="details-container">
+          <form action="/action_page.php">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="david@rhinoafrica.com"/>
+            <label for="cellphone">Cellphone</label>
+            <input type="tel" name="cellphone" id="cellphone" placeholder="+27 (0)21 234 1234"/>
+            <label for="activity">Summary Activity Email:</label>
+            <input list="email-activity" name="activity" placeholder="None"/>
+            <datalist id="email-activity">
+              <option value="None"></option>
+              <option value="Often"></option>
+              <option value="Everyday"></option>
+              <option value="All Day"></option>
+            </datalist>
+            <input type="submit" value="Submit"/>
+          </form>
+        </div>
+      </section>
+    </div>
+    <div class="modal" id="Support-modal">
+      <div class="support-modal-overlay" id="Support-modal-overlay"></div>
+      <section class="support-modal"><i class="support-modal-close material-icons md-30" id="Support-modal-close">close</i>
+        <h3>How can we help?</h3>
+        <h6>We are looking forward to hearing from you</h6>
+        <form id="SupportForm" action="/action_page.php">
+          <input list="email-activity" name="activity" placeholder="Content Issue:"/>
+          <datalist id="email-activity">
+            <option value="None"></option>
+            <option value="Often"></option>
+            <option value="Everyday"></option>
+            <option value="All Day"></option>
+          </datalist>
+          <textarea name="message" form="SupportForm" placeholder="Message..."></textarea>
+          <input type="submit" value="Submit"/>
+        </form>
+      </section>
+    </div>
+    <div class="slideshow" data-slides="[      &quot;assets/img/fanart/banner1.jpg&quot;,      &quot;assets/img/fanart/banner2.jpg&quot;,      &quot;assets/img/fanart/banner3.jpg&quot;      ]"></div>
+    <section class="hero flex">
+      <div class="maxwidth-920 center">
+        <div class="overview-Container">
+          <div class="poster-box"><img src="https://s-media-cache-ak0.pinimg.com/736x/06/cb/33/06cb338efcf3ac37a90caad05fd356a2.jpg"/><i class="material-icons md-48">play_arrow</i></div>
+          <div class="detail-container">
+            <div class="info-container">
+              <div class="starbox"><i class="material-icons md-30">star_rate </i><span class="anchor">7/10</span></div>
+              <h4>Movie Title </h4><span class="anchor">The path to paradise begins in hell.</span><span class="caption">15  |  2h 2min  |  Horror, Sci-Fi, Thriller  |  12 May 2017 (UK) </span>
+              <p>The crew of a colony ship, bound for a remote planet, discover an uncharted paradise with a threat beyond their imagination, and must attempt a harrowing escape.</p>
+            </div>
+            <div class="cta-container"><a class="report_selector">
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Report <i class="material-icons">report_problem</i></button></a><a>
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Request <i class="material-icons">cloud_download</i></button></a></div>
+          </div>
+        </div>
+        <div class="mdl-grid mediaGrid" id="MediaContainer">
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone"> </div>
+        </div>
+      </div>
+    </section>
+    <script src="./vendors/jquery/dist/jquery.min.js"></script>
+    <script src="./vendors/sortable.js"></script>
+    <script src="./vendors/nstSlider/jquery.nstSlider.min.js"></script>
+    <script src="./vendors/mdl/material.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>

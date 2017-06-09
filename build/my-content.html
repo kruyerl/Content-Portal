@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Currant - Content Portal Site </title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <link rel="shortcut icon" href="./assets/img/favicons/favicon.ico"/>
+    <link rel="stylesheet" href="vendors/mdl/material.min.css"/>
+    <link rel="stylesheet" href="vendors/nstSlider/jquery.nstSlider.css"/>
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  </head>
+  <body class="page-my-content">
+    <nav>
+      <div class="right-nav">
+        <div class="links"><i class="material-icons md-30" id="Support-modal-selector">live_help</i>
+          <div class="notifications"><i class="material-icons md-30 mdl-badge mdl-badge--overlap" id="Notifications-modal-selector" data-badge="0">inbox</i>
+            <div class="notification-container" id="Notifications-modal">
+              <div class="notification-arrow"></div>
+              <div id="card-container"><a href="#">   
+                  <card>
+                    <div class="avatar"><img src="http://fillmurray.com/200/300"/><i class="material-icons md-22">notifications_none</i></div>
+                    <div class="details-container"><span class="notifications-label">Notification label</span><span class="notifications-caption">Notification Description</span></div>
+                  </card></a><a href="#">   
+                  <card>
+                    <div class="avatar"><img src="http://fillmurray.com/200/300"/><i class="material-icons md-22">notifications_none</i></div>
+                    <div class="details-container"><span class="notifications-label">Notification label</span><span class="notifications-caption">Notification Description</span></div>
+                  </card></a><a href="#">   
+                  <card>
+                    <div class="avatar"><img src="http://fillmurray.com/200/300"/><i class="material-icons md-22">notifications_none</i></div>
+                    <div class="details-container"><span class="notifications-label">Notification label</span><span class="notifications-caption">Notification Description</span></div>
+                  </card></a><a href="#">   
+                  <card>
+                    <div class="avatar"><img src="http://fillmurray.com/200/300"/><i class="material-icons md-22">notifications_none</i></div>
+                    <div class="details-container"><span class="notifications-label">Notification label</span><span class="notifications-caption">Notification Description</span></div>
+                  </card></a></div>
+            </div>
+            <div class="notification-modal-overlay" id="Notification-modal-overlay"></div>
+          </div>
+        </div>
+        <div class="avatar" id="Account-modal-selector"><a href="#"><img src="http://fillmurray.com/200/300"/></a></div>
+      </div>
+      <div class="back-links"><a href="/index.html"><i class="material-icons md-30">keyboard_backspace</i></a><a href="/index.html"><i class="material-icons md-30">home</i></a></div>
+    </nav>
+    <div class="modal" id="Account-modal">
+      <div class="account-modal-overlay" id="Account-modal-overlay"></div>
+      <section class="account-modal"><i class="account-modal-close material-icons md-30" id="Account-modal-close">close</i>
+        <div class="avatar-container">
+          <div class="avatar"><img src="http://fillmurray.com/200/300"/></div>
+          <h4>David Ryan</h4>
+        </div>
+        <div class="details-container">
+          <form action="/action_page.php">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="david@rhinoafrica.com"/>
+            <label for="cellphone">Cellphone</label>
+            <input type="tel" name="cellphone" id="cellphone" placeholder="+27 (0)21 234 1234"/>
+            <label for="activity">Summary Activity Email:</label>
+            <input list="email-activity" name="activity" placeholder="None"/>
+            <datalist id="email-activity">
+              <option value="None"></option>
+              <option value="Often"></option>
+              <option value="Everyday"></option>
+              <option value="All Day"></option>
+            </datalist>
+            <input type="submit" value="Submit"/>
+          </form>
+        </div>
+      </section>
+    </div>
+    <div class="modal" id="Support-modal">
+      <div class="support-modal-overlay" id="Support-modal-overlay"></div>
+      <section class="support-modal"><i class="support-modal-close material-icons md-30" id="Support-modal-close">close</i>
+        <h3>How can we help?</h3>
+        <h6>We are looking forward to hearing from you</h6>
+        <form id="SupportForm" action="/action_page.php">
+          <input list="email-activity" name="activity" placeholder="Content Issue:"/>
+          <datalist id="email-activity">
+            <option value="None"></option>
+            <option value="Often"></option>
+            <option value="Everyday"></option>
+            <option value="All Day"></option>
+          </datalist>
+          <textarea name="message" form="SupportForm" placeholder="Message..."></textarea>
+          <input type="submit" value="Submit"/>
+        </form>
+      </section>
+    </div>
+    <section class="hero flex">
+      <div class="maxwidth-920 center">
+        <div class="intro-Container">
+          <h3 class="white page-title">My Content</h3>
+          <h5 class="white">Manage your content, see your queue and prioritise transfers all from one place.</h5>
+        </div>
+        <div class="mdl-grid mediaGrid" id="MediaContainer">
+          <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--8-col-phone"> 
+            <div class="transfer-size-container"><a class="white">1024mb to Transfer</a></div>
+            <ul class="headings">
+              <li class="card list-card">
+                <div class="detail-container"> <span class="icon-container my-handle"> </span><span class="details"><span class="title">
+                      <div class="caption white">Title</div></span><span class="eta">
+                      <div class="caption white">ETA</div></span></span></div>
+                <div class="status-container"> <span class="icon-container report">
+                    <div class="caption white">Report</div></span><span class="icon-container status">
+                    <div class="caption white">Status</div></span></div>
+              </li>
+            </ul>
+            <ul id="items">
+              <li class="card list-card">
+                <div class="detail-container"> <span class="icon-container my-handle"> <i class="material-icons md-18">reorder</i></span><span class="details"><span class="title"><a class="black">Guardians of the galaxy </a></span><span class="eta"><span class="caption">1 Day </span></span></span></div>
+                <div class="status-container"> <span class="icon-container report"><a class="report_selector"><i class="material-icons md-18" id="Support-modal-selector">report_problem</i></a></span><span class="icon-container status"><a href=""><i class="material-icons md-18">update</i></a></span></div>
+              </li>
+              <li class="card list-card">
+                <div class="detail-container"> <span class="icon-container my-handle"> <i class="material-icons md-18">reorder</i></span><span class="details"><span class="title"><a class="black">Guardians of the galaxy </a></span><span class="eta"><span class="caption">Transfer Successful</span></span></span></div>
+                <div class="status-container"> <span class="icon-container report"><a class="report_selector"><i class="material-icons md-18">report_problem</i></a></span><span class="icon-container status"><a href=""><i class="material-icons md-18">close</i></a></span></div>
+              </li>
+              <li class="card list-card">
+                <div class="detail-container"> <span class="icon-container my-handle"> <i class="material-icons md-18">reorder</i></span><span class="details"><span class="title"><a class="black">Guardians of the galaxy </a></span><span class="eta"><span class="caption">1 Day </span></span></span></div>
+                <div class="status-container"> <span class="icon-container report"><a class="report_selector"><i class="material-icons md-18">report_problem</i></a></span><span class="icon-container status"><a href=""><i class="material-icons md-18">update</i></a></span></div>
+              </li>
+              <li class="card list-card">
+                <div class="detail-container"> <span class="icon-container my-handle"> <i class="material-icons md-18">reorder</i></span><span class="details"><span class="title"><a class="black">Guardians of the galaxy </a></span><span class="eta"><span class="caption">1 Day </span></span></span></div>
+                <div class="status-container"> <span class="icon-container report"><a class="report_selector"><i class="material-icons md-18">report_problem</i></a></span><span class="icon-container status"><a href=""><i class="material-icons md-18">update</i></a></span></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./vendors/jquery/dist/jquery.min.js"></script>
+    <script src="./vendors/sortable.js"></script>
+    <script src="./vendors/nstSlider/jquery.nstSlider.min.js"></script>
+    <script src="./vendors/mdl/material.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>

@@ -29,9 +29,3 @@ Temporary Items
 
 ### NodeJS ###
 node_modules
-
-### Bower ###
-source/vendors
-
-### Build ###
-build
