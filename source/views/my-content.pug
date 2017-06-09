@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+html(lang="en")
+  include ./snippets/head.pug
+  body.page-my-content
+    include ./snippets/nav.pug
+    include ./snippets/account-modal.pug
+    include ./snippets/support-modal.pug
+    
+    section.hero.flex
+      
+      .maxwidth-920.center
+        .intro-Container
+          h3.white.page-title My Content
+          h5.white Manage your content, see your queue and prioritise transfers all from one place.
+        
+        .mdl-grid.mediaGrid#MediaContainer
+          .mdl-cell.mdl-cell--12-col.mdl-cell--8-col-tablet.mdl-cell--8-col-phone 
+            .transfer-size-container
+              a.white 1024mb to Transfer
+            ul.headings
+              li.card.list-card
+                .detail-container 
+                  span.icon-container.my-handle 
+              
+                  span.details
+                    span.title
+                      .caption.white Title
+                    span.eta
+                      .caption.white ETA
+                .status-container  
+                  span.icon-container.report
+                    .caption.white Report
+                  span.icon-container.status
+                    .caption.white Status
+            ul#items
+              li.card.list-card
+                .detail-container 
+                  span.icon-container.my-handle 
+                    i(class="material-icons md-18") reorder
+                  span.details
+                    span.title
+                      a.black Guardians of the galaxy 
+                    span.eta
+                      span.caption 1 Day 
+                .status-container  
+                  span.icon-container.report
+                    a.report_selector
+                      i#Support-modal-selector(class="material-icons md-18") report_problem
+                  span.icon-container.status
+                    a(href="")
+                      i(class="material-icons md-18") update
+                  
+              li.card.list-card
+                .detail-container 
+                  span.icon-container.my-handle 
+                    i(class="material-icons md-18") reorder
+                  span.details
+                    span.title
+                      a.black Guardians of the galaxy 
+                    span.eta
+                      span.caption Transfer Successful
+                .status-container  
+                  span.icon-container.report
+                    a.report_selector
+                      i(class="material-icons md-18") report_problem
+                  span.icon-container.status
+                    a(href="")
+                      i(class="material-icons md-18") close
+            
+              li.card.list-card
+                .detail-container 
+                  span.icon-container.my-handle 
+                    i(class="material-icons md-18") reorder
+                  span.details
+                    span.title
+                      a.black Guardians of the galaxy 
+                    span.eta
+                      span.caption 1 Day 
+                .status-container  
+                  span.icon-container.report
+                    a.report_selector
+                      i(class="material-icons md-18") report_problem
+                  span.icon-container.status
+                    a(href="")
+                      i(class="material-icons md-18") update
+                  
+              li.card.list-card
+                .detail-container 
+                  span.icon-container.my-handle 
+                    i(class="material-icons md-18") reorder
+                  span.details
+                    span.title
+                      a.black Guardians of the galaxy 
+                    span.eta
+                      span.caption 1 Day 
+                .status-container  
+                  span.icon-container.report
+                    a.report_selector
+                      i(class="material-icons md-18") report_problem
+                  span.icon-container.status
+                    a(href="")
+                      i(class="material-icons md-18") update
+                          
+
+      
+    
+    include ./snippets/script.pug

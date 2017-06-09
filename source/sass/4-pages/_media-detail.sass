@@ -1,0 +1,52 @@
+body.page-movies, body.media-details
+
+  section.hero
+    padding-top: 15vh
+    padding-bottom: 2em
+
+    .maxwidth-920.center
+      .overview-Container
+        background-color: $brand-white
+        display: flex
+        flex-direction: row
+        .poster-box
+          position: relative
+          display: flex
+          align-items: center
+          justify-content: center
+
+          img
+            width: 100%
+            max-width: 220px
+          i
+            position: absolute
+            color: $brand-white
+
+        .detail-container
+          display: flex
+          flex-direction: column
+          .info-container
+            padding: 16px
+            flex: 1
+
+            .starbox
+              display: flex
+              align-items: center
+              i
+                max-width: 40px
+            h4
+              margin-top: 8px
+            span
+              display: block
+              padding: 8px 0
+            p
+              margin-bottom: 0px
+          .cta-container
+            display: flex
+            padding-bottom: 8px
+
+@media screen and (max-width: 600px)
+  body.page-movies section.hero .maxwidth-920.center .overview-Container, body.media-details section.hero .maxwidth-920.center .overview-Container
+        flex-direction: column
+  body.page-movies section.hero .maxwidth-920.center .overview-Container .poster-box img, body.media-details section.hero .maxwidth-920.center .overview-Container .poster-box img
+      max-width: 1000px

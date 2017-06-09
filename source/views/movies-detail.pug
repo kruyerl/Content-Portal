@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+html(lang="en")
+  include ./snippets/head.pug
+  body.media-details
+    include ./snippets/nav.pug
+    include ./snippets/account-modal.pug
+    include ./snippets/support-modal.pug
+    
+    .slideshow(data-slides='[\
+      "assets/img/fanart/banner1.jpg",\
+      "assets/img/fanart/banner2.jpg",\
+      "assets/img/fanart/banner3.jpg"\
+      ]')
+      
+    section.hero.flex
+      
+      .maxwidth-920.center
+        .overview-Container
+          .poster-box
+            img(src="https://s-media-cache-ak0.pinimg.com/736x/06/cb/33/06cb338efcf3ac37a90caad05fd356a2.jpg") 
+            i(class="material-icons md-48") play_arrow
+          .detail-container
+            .info-container
+              .starbox
+                i(class="material-icons md-30") star_rate 
+                span.anchor 7/10
+                 
+              h4 Movie Title 
+              span.anchor The path to paradise begins in hell.
+              span.caption 15  |  2h 2min  |  Horror, Sci-Fi, Thriller  |  12 May 2017 (UK) 
+              p The crew of a colony ship, bound for a remote planet, discover an uncharted paradise with a threat beyond their imagination, and must attempt a harrowing escape.
+            .cta-container
+            
+              a.report_selector
+                button.mdl-button.mdl-js-button.mdl-js-ripple-effect Report <i class="material-icons">report_problem</i>
+              a
+                button.mdl-button.mdl-js-button.mdl-js-ripple-effect Request <i class="material-icons">cloud_download</i>
+              
+        .mdl-grid.mediaGrid#MediaContainer
+          .mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--4-col-phone 
+            
+            
+          
+    
+    include ./snippets/script.pug

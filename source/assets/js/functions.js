@@ -18,9 +18,13 @@ $(document).ready(function() {
 
 
   // Support Modal ////////////////////////////
+  $(".report_selector").click(function() {
+    $("#Support-modal").toggleClass("is-active");
+  });
   $("#Support-modal-selector").click(function() {
     $("#Support-modal").toggleClass("is-active");
   });
+
   $("#Support-modal-overlay").click(function() {
     $("#Support-modal").toggleClass("is-active");
   });
@@ -48,24 +52,24 @@ $(document).ready(function() {
 
 
   // slideshow ////////////////////////////
-  (function($) {
+    (function($) {
 
-    'use strict';
+      'use strict';
 
-    var $slides = $('[data-slides]');
-    var images = $slides.data('slides');
-    var count = images.length;
-    var slideshow = function() {
-      $slides
-        .css('background-image', 'url("' + images[Math.floor(Math.random() * count)] + '")')
-        .show(0, function() {
-          setTimeout(slideshow, 10000);
-        });
-    };
+      var $slides = $('[data-slides]');
+      var images = $slides.data('slides');
+      var count = images.length;
+      var slideshow = function() {
+        $slides
+          .css('background-image', 'url("' + images[Math.floor(Math.random() * count)] + '")')
+          .show(0, function() {
+            setTimeout(slideshow, 10000);
+          });
+      };
 
-    slideshow();
+      slideshow();
 
-  }(jQuery));
+    }(jQuery));
 
 
 
@@ -164,12 +168,12 @@ $(document).ready(function() {
         }
         i++;
       });
-
-
     }
-
-
   });
+
+
+
+
 
   //End Doc Ready
 });
