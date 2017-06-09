@@ -1543,8 +1543,23 @@ body.page-movies section.hero, body.media-details section.hero {
   padding-bottom: 2em;
 }
 
+body.page-movies section.hero .maxwidth-920.center, body.media-details section.hero .maxwidth-920.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 body.page-movies section.hero .maxwidth-920.center .overview-Container, body.media-details section.hero .maxwidth-920.center .overview-Container {
-  background-color: #FFFBFB;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1585,6 +1600,7 @@ body.page-movies section.hero .maxwidth-920.center .overview-Container .detail-c
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #FFFBFB;
 }
 
 body.page-movies section.hero .maxwidth-920.center .overview-Container .detail-container .info-container, body.media-details section.hero .maxwidth-920.center .overview-Container .detail-container .info-container {
@@ -1605,19 +1621,23 @@ body.page-movies section.hero .maxwidth-920.center .overview-Container .detail-c
 
 body.page-movies section.hero .maxwidth-920.center .overview-Container .detail-container .info-container .starbox i, body.media-details section.hero .maxwidth-920.center .overview-Container .detail-container .info-container .starbox i {
   max-width: 40px;
+  color: #111;
 }
 
 body.page-movies section.hero .maxwidth-920.center .overview-Container .detail-container .info-container h4, body.media-details section.hero .maxwidth-920.center .overview-Container .detail-container .info-container h4 {
   margin-top: 8px;
+  color: #111;
 }
 
 body.page-movies section.hero .maxwidth-920.center .overview-Container .detail-container .info-container span, body.media-details section.hero .maxwidth-920.center .overview-Container .detail-container .info-container span {
   display: block;
   padding: 8px 0;
+  color: #111;
 }
 
 body.page-movies section.hero .maxwidth-920.center .overview-Container .detail-container .info-container p, body.media-details section.hero .maxwidth-920.center .overview-Container .detail-container .info-container p {
   margin-bottom: 0px;
+  color: #111;
 }
 
 body.page-movies section.hero .maxwidth-920.center .overview-Container .detail-container .cta-container, body.media-details section.hero .maxwidth-920.center .overview-Container .detail-container .cta-container {

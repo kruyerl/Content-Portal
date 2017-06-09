@@ -5,8 +5,12 @@ body.page-movies, body.media-details
     padding-bottom: 2em
 
     .maxwidth-920.center
+      display: flex
+      justify-content: center
+      flex-direction: column
+      align-items: center
       .overview-Container
-        background-color: $brand-white
+
         display: flex
         flex-direction: row
         .poster-box
@@ -25,6 +29,7 @@ body.page-movies, body.media-details
         .detail-container
           display: flex
           flex-direction: column
+          background-color: $brand-white
           .info-container
             padding: 16px
             flex: 1
@@ -34,13 +39,17 @@ body.page-movies, body.media-details
               align-items: center
               i
                 max-width: 40px
+                color: $brand-black
             h4
               margin-top: 8px
+              color: $brand-black
             span
               display: block
               padding: 8px 0
+              color: $brand-black
             p
               margin-bottom: 0px
+              color: $brand-black
           .cta-container
             display: flex
             padding-bottom: 8px
