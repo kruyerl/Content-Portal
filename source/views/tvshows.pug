@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+html(lang="en")
+  include ./snippets/head.pug
+  body.page-movies
+    include ./snippets/nav.pug
+    include ./snippets/account-modal.pug
+    include ./snippets/support-modal.pug
+    
+    .slideshow(data-slides='[\
+      "assets/img/fanart/banner1.jpg",\
+      "assets/img/fanart/banner2.jpg",\
+      "assets/img/fanart/banner3.jpg"\
+      ]')
+      
+    section.hero.flex
+      
+      .maxwidth-920.center
+        .intro-Container
+          h3.white.page-title TV Shows
+          h5.white Up to date with your favourite show? <br> Manage your movie library here.
+          form#SearchForm(action="/action_page.php")
+            input#SearchInput(type="input" placeholder="What are you looking for?")
+            i#SearchFormIcon(class="material-icons md-30") search
+          
+        include ./snippets/filters-tvshows.pug
+        
+        .mdl-grid.mediaGrid#MediaContainer
+          .mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--4-col-phone 
+            include ./snippets/media-card.pug
+            
+          .mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--4-col-phone 
+            include ./snippets/media-card.pug
+          .mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--4-col-phone 
+            include ./snippets/media-card.pug
+          .mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--4-col-phone 
+            include ./snippets/media-card.pug
+        
+          .mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--4-col-phone 
+            include ./snippets/media-card.pug
+            
+          .mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--4-col-phone 
+            include ./snippets/media-card.pug
+          .mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--4-col-phone 
+            include ./snippets/media-card.pug
+          .mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--4-col-phone 
+            include ./snippets/media-card.pug
+      
+      
+        
+    
+        
+    
+    include ./snippets/script.pug

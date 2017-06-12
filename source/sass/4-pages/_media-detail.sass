@@ -13,16 +13,18 @@ body.page-movies, body.media-details
         justify-content: center
         .poster-box
           position: relative
-          display: flex
-          align-items: center
-          justify-content: center
 
           img
             width: 100%
             max-width: 220px
-          i
+          a
             position: absolute
-            color: $brand-white
+            left: 50%
+            right: 50%
+            top: 50%
+            bottom: 50%
+            i
+              color: $brand-white
 
         .detail-container
           display: flex
@@ -125,6 +127,72 @@ body.page-movies, body.media-details
       .caption
         margin-top: 4px
 
+
+  .season-container
+    width: 100%
+    box-sizing: border-box
+    margin-top: 2em
+    margin-bottom: 2em
+    .season-title-container
+      width: 100%
+      max-width: 752px
+      margin-left: auto
+      margin-right: auto
+      box-sizing: border-box
+      display: flex
+      background-color: $brand-primary-black
+      justify-content: space-between
+      .caption
+        color: $brand-white
+      .season-details-container
+        box-sizing: border-box
+        padding: 16px
+        display: flex
+        align-items: center
+
+        h5
+          color: $brand-white
+          margin-right: 16px
+          margin-bottom: 0px
+
+      .season-toggle
+        display: flex
+        padding: 16px
+        align-items: center
+
+
+        i, .caption
+          padding-left: 16px
+          cursor: pointer
+
+    table
+      width: 100%
+      max-width: 752px
+      margin-left: auto
+      margin-right: auto
+      transition: all 300ms ease-in-out
+      &.is-hidden
+        opacity: 0
+        pointer-events: none
+        overflow: hidden
+        display: none
+      tbody
+        background-color: $brand-white
+        tr.headings
+          background-color: $brand-primary-black
+          .caption
+            color: $brand-white
+        td
+          padding: 8px 16px
+
+          &.icons
+            width: 40px
+            a, .caption
+            margin-left: auto
+            margin-right: auto
+            i
+              padding-top: 4px
+              padding-left: 5px
 @media screen and (max-width: 600px)
   body.page-movies section.hero .maxwidth-920.center .overview-Container, body.media-details section.hero .maxwidth-920.center .overview-Container
     flex-direction: column

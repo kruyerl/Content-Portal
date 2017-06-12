@@ -171,8 +171,11 @@ $(document).ready(function() {
   });
 
 
+  $('.season-container').find('.season-toggle').on('click', function (e) {
+    e.preventDefault();
+    $(this).closest('.season-container').find('table').toggleClass('is-hidden');
+  });
 
-  
 
   //End Doc Ready
 });

@@ -1562,15 +1562,6 @@ body.page-movies section.hero .maxwidth-920.center .overview-Container, body.med
 
 body.page-movies section.hero .maxwidth-920.center .overview-Container .poster-box, body.media-details section.hero .maxwidth-920.center .overview-Container .poster-box {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 body.page-movies section.hero .maxwidth-920.center .overview-Container .poster-box img, body.media-details section.hero .maxwidth-920.center .overview-Container .poster-box img {
@@ -1578,8 +1569,15 @@ body.page-movies section.hero .maxwidth-920.center .overview-Container .poster-b
   max-width: 220px;
 }
 
-body.page-movies section.hero .maxwidth-920.center .overview-Container .poster-box i, body.media-details section.hero .maxwidth-920.center .overview-Container .poster-box i {
+body.page-movies section.hero .maxwidth-920.center .overview-Container .poster-box a, body.page-movies section.hero .maxwidth-920.center .overview-Container .poster-box .card.media-card .details .cta button, .card.media-card .details .cta body.page-movies section.hero .maxwidth-920.center .overview-Container .poster-box button, body.media-details section.hero .maxwidth-920.center .overview-Container .poster-box a, body.media-details section.hero .maxwidth-920.center .overview-Container .poster-box .card.media-card .details .cta button, .card.media-card .details .cta body.media-details section.hero .maxwidth-920.center .overview-Container .poster-box button {
   position: absolute;
+  left: 50%;
+  right: 50%;
+  top: 50%;
+  bottom: 50%;
+}
+
+body.page-movies section.hero .maxwidth-920.center .overview-Container .poster-box a i, body.page-movies section.hero .maxwidth-920.center .overview-Container .poster-box .card.media-card .details .cta button i, .card.media-card .details .cta body.page-movies section.hero .maxwidth-920.center .overview-Container .poster-box button i, body.media-details section.hero .maxwidth-920.center .overview-Container .poster-box a i, body.media-details section.hero .maxwidth-920.center .overview-Container .poster-box .card.media-card .details .cta button i, .card.media-card .details .cta body.media-details section.hero .maxwidth-920.center .overview-Container .poster-box button i {
   color: #FFFBFB;
 }
 
@@ -1761,6 +1759,107 @@ body.page-movies .card-avatarcard .details-container, body.media-details .card-a
 
 body.page-movies .card-avatarcard .details-container .caption, body.page-movies .card-avatarcard nav .notifications .notification-container card .details-container span.notifications-caption, nav .notifications .notification-container card body.page-movies .card-avatarcard .details-container span.notifications-caption, body.media-details .card-avatarcard .details-container .caption, body.media-details .card-avatarcard nav .notifications .notification-container card .details-container span.notifications-caption, nav .notifications .notification-container card body.media-details .card-avatarcard .details-container span.notifications-caption {
   margin-top: 4px;
+}
+
+body.page-movies .season-container, body.media-details .season-container {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+body.page-movies .season-container .season-title-container, body.media-details .season-container .season-title-container {
+  width: 100%;
+  max-width: 752px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #0E1A24;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body.page-movies .season-container .season-title-container .caption, body.page-movies .season-container .season-title-container nav .notifications .notification-container card .details-container span.notifications-caption, nav .notifications .notification-container card .details-container body.page-movies .season-container .season-title-container span.notifications-caption, body.media-details .season-container .season-title-container .caption, body.media-details .season-container .season-title-container nav .notifications .notification-container card .details-container span.notifications-caption, nav .notifications .notification-container card .details-container body.media-details .season-container .season-title-container span.notifications-caption {
+  color: #FFFBFB;
+}
+
+body.page-movies .season-container .season-title-container .season-details-container, body.media-details .season-container .season-title-container .season-details-container {
+  box-sizing: border-box;
+  padding: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body.page-movies .season-container .season-title-container .season-details-container h5, body.media-details .season-container .season-title-container .season-details-container h5 {
+  color: #FFFBFB;
+  margin-right: 16px;
+  margin-bottom: 0px;
+}
+
+body.page-movies .season-container .season-title-container .season-toggle, body.media-details .season-container .season-title-container .season-toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body.page-movies .season-container .season-title-container .season-toggle i, body.page-movies .season-container .season-title-container .season-toggle .caption, body.page-movies .season-container .season-title-container .season-toggle nav .notifications .notification-container card .details-container span.notifications-caption, nav .notifications .notification-container card .details-container body.page-movies .season-container .season-title-container .season-toggle span.notifications-caption, body.media-details .season-container .season-title-container .season-toggle i, body.media-details .season-container .season-title-container .season-toggle .caption, body.media-details .season-container .season-title-container .season-toggle nav .notifications .notification-container card .details-container span.notifications-caption, nav .notifications .notification-container card .details-container body.media-details .season-container .season-title-container .season-toggle span.notifications-caption {
+  padding-left: 16px;
+  cursor: pointer;
+}
+
+body.page-movies .season-container table, body.media-details .season-container table {
+  width: 100%;
+  max-width: 752px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 300ms ease-in-out;
+}
+
+body.page-movies .season-container table.is-hidden, body.media-details .season-container table.is-hidden {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  pointer-events: none;
+  overflow: hidden;
+  display: none;
+}
+
+body.page-movies .season-container table tbody, body.media-details .season-container table tbody {
+  background-color: #FFFBFB;
+}
+
+body.page-movies .season-container table tbody tr.headings, body.media-details .season-container table tbody tr.headings {
+  background-color: #0E1A24;
+}
+
+body.page-movies .season-container table tbody tr.headings .caption, body.page-movies .season-container table tbody tr.headings nav .notifications .notification-container card .details-container span.notifications-caption, nav .notifications .notification-container card .details-container body.page-movies .season-container table tbody tr.headings span.notifications-caption, body.media-details .season-container table tbody tr.headings .caption, body.media-details .season-container table tbody tr.headings nav .notifications .notification-container card .details-container span.notifications-caption, nav .notifications .notification-container card .details-container body.media-details .season-container table tbody tr.headings span.notifications-caption {
+  color: #FFFBFB;
+}
+
+body.page-movies .season-container table tbody td, body.media-details .season-container table tbody td {
+  padding: 8px 16px;
+}
+
+body.page-movies .season-container table tbody td.icons, body.media-details .season-container table tbody td.icons {
+  width: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body.page-movies .season-container table tbody td.icons i, body.media-details .season-container table tbody td.icons i {
+  padding-top: 4px;
+  padding-left: 5px;
 }
 
 @media (max-width: 700px) {
