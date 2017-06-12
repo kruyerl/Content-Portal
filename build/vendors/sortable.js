@@ -1482,15 +1482,12 @@
 $(document).ready(function() {
 
 	if ($('body.page-my-content').length > 0)
-    {
+		{
 			var el = document.getElementById('items');
-			var sortable = Sortable.create(el);
+			var sortable = Sortable.create(el,{
+				filter: ".ignore-elements"
+			});
 
-    }
-
-
-
-
-
+		}
 
 });

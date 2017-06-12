@@ -5,14 +5,12 @@ body.page-movies, body.media-details
     padding-bottom: 2em
 
     .maxwidth-920.center
-      display: flex
-      justify-content: center
-      flex-direction: column
-      align-items: center
+
       .overview-Container
 
         display: flex
         flex-direction: row
+        justify-content: center
         .poster-box
           position: relative
           display: flex
@@ -54,8 +52,86 @@ body.page-movies, body.media-details
             display: flex
             padding-bottom: 8px
 
+
+
+  .media-detail-info
+    position: fixed
+    bottom: 0px
+    margin: 0px
+    padding: 0px
+    background-color: $brand-primary-black
+    width: 100%
+    .maxwidth-920
+      padding: 0px
+      margin-left: auto
+      margin-right: auto
+    .mdl-tabs__panel
+      background-color: lighten($brand-primary-black, 10%)
+      margin-top: 0px
+      max-height: 150px
+      overflow: scroll
+    .mdl-tabs
+      box-sizing: border-box
+      background-color: $brand-primary-black
+      .mdl-tabs__tab
+        display: flex
+        justify-content: center
+        align-items: center
+        flex: 1
+        color: $brand-white
+        h6.anchor
+          margin-left: 8px
+          color: $brand-white
+        &.closetab
+          &.is-active
+            background-color: transparent
+            &::after
+              background-color: transparent!important
+            i
+              opacity: 0
+        i.material-icons
+          color: $brand-white
+          margin-top: 0px
+          opacity: 1
+          transition: opacity 400ms ease-in-out
+        &.is-active
+          background-color: lighten($brand-primary-black, 5%)
+          &::after
+            background-color: $brand-primary !important
+      .mdl-tabs__tab-bar
+        border-bottom: 1px solid transparent
+        width: 100%
+  .card-avatarcard
+    box-shadow: 0px 2px 10px 0px rgba($brand-black,0.95)
+    overflow: hidden
+    border-radius: 2px
+    background-color: $brand-white
+    padding: 8px
+    display: flex
+    .avatar
+      width: 40px
+      height: 40px
+      border-radius: 50%
+      overflow: hidden
+      margin-right: 16px
+      img
+        max-width: 40px
+
+    .details-container
+      display: flex
+      align-items: center
+      flex-direction: column
+      justify-content: center
+      .caption
+        margin-top: 4px
+
 @media screen and (max-width: 600px)
   body.page-movies section.hero .maxwidth-920.center .overview-Container, body.media-details section.hero .maxwidth-920.center .overview-Container
-        flex-direction: column
+    flex-direction: column
   body.page-movies section.hero .maxwidth-920.center .overview-Container .poster-box img, body.media-details section.hero .maxwidth-920.center .overview-Container .poster-box img
-      max-width: 1000px
+    max-width: 1000px
+  body.page-movies .media-detail-info .mdl-tabs .mdl-tabs__tab h6.anchor, body.media-details .media-detail-info .mdl-tabs .mdl-tabs__tab h6.anchor
+      display: none !important
+
+  body.page-movies .media-detail-info .mdl-tabs__panel, body.media-details .media-detail-info .mdl-tabs__panel
+    max-height: 300px

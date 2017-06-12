@@ -38,8 +38,87 @@ html(lang="en")
               
         .mdl-grid.mediaGrid#MediaContainer
           .mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--4-col-phone 
-            
-            
           
-    
+      .media-detail-info
+        .maxwidth-920.center  
+            .mdl-tabs.mdl-js-tabs.mdl-js-ripple-effect
+              .mdl-tabs__tab-bar
+                a.mdl-tabs__tab(href='#Actors-panel') 
+                  i.material-icons.md-22 person_outline
+                  h6.anchor Actors
+                a.mdl-tabs__tab(href='#Directors-panel') 
+                  i.material-icons.md-22 movie_filter
+                  h6.anchor Directors
+                a.mdl-tabs__tab(href='#Writers-panel') 
+                  i.material-icons.md-22 create
+                  h6.anchor Writers
+                a.mdl-tabs__tab.closetab.is-active(href='#close-panel') 
+                  i.material-icons.md-22 expand_more
+                  
+                
+                
+              #Actors-panel.mdl-tabs__panel
+                .mdl-grid.mediaGrid
+                  .mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--4-col-phone
+                    .card-avatarcard
+                      .avatar
+                        img(src="http://fillmurray.com/200/300")
+                      .details-container
+                        .anchor Actor Name
+                        .caption Character Name
+                      
+                  .mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--4-col-phone
+                    .card-avatarcard
+                      .avatar
+                        img(src="http://fillmurray.com/200/300")
+                      .details-container
+                        .anchor Actor Name
+                        .caption Character Name
+                      
+                  .mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--4-col-phone
+                    .card-avatarcard
+                      .avatar
+                        img(src="http://fillmurray.com/200/300")
+                      .details-container
+                        .anchor Actor Name
+                        .caption Character Name
+                  
+                  .mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--4-col-phone
+                    .card-avatarcard
+                      .avatar
+                        img(src="http://fillmurray.com/200/300")
+                      .details-container
+                        .anchor Actor Name
+                        .caption Character Name
+                    
+                  .mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--4-col-phone
+                    .card-avatarcard
+                      .avatar
+                        img(src="http://fillmurray.com/200/300")
+                      .details-container
+                        .anchor Actor Name
+                        .caption Character Name
+                    
+              #Directors-panel.mdl-tabs__panel
+                .mdl-grid.mediaGrid
+                  .mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--4-col-phone
+                    .card-avatarcard
+                      .avatar
+                        i.material-icons.md-36 person
+                      .details-container
+                        .anchor Directors Name
+                      
+                
+                
+              #Writers-panel.mdl-tabs__panel  
+                .mdl-grid.mediaGrid
+                  .mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--4-col-phone
+                    .card-avatarcard
+                      .avatar
+                        i.material-icons.md-36 person
+                      .details-container
+                        .anchor Writers Name
+              
+              #close-panel.mdl-tabs__panel 
+        
     include ./snippets/script.pug

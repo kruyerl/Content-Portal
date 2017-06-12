@@ -4,7 +4,6 @@ $(document).ready(function() {
 
 
   // Account Modal ////////////////////////////
-
   $("#Account-modal-selector").click(function() {
     $("#Account-modal").toggleClass("is-active");
   });
@@ -173,7 +172,7 @@ $(document).ready(function() {
 
 
 
-
+  
 
   //End Doc Ready
 });
