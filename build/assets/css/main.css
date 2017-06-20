@@ -1572,9 +1572,11 @@ body.page-movies section.hero .maxwidth-920.center .overview-Container .poster-b
 body.page-movies section.hero .maxwidth-920.center .overview-Container .poster-box a, body.page-movies section.hero .maxwidth-920.center .overview-Container .poster-box .card.media-card .details .cta button, .card.media-card .details .cta body.page-movies section.hero .maxwidth-920.center .overview-Container .poster-box button, body.media-details section.hero .maxwidth-920.center .overview-Container .poster-box a, body.media-details section.hero .maxwidth-920.center .overview-Container .poster-box .card.media-card .details .cta button, .card.media-card .details .cta body.media-details section.hero .maxwidth-920.center .overview-Container .poster-box button {
   position: absolute;
   left: 50%;
-  right: 50%;
   top: 50%;
-  bottom: 50%;
+  margin-top: -20px;
+  margin-left: -20px;
+  width: 40px;
+  height: 40px;
 }
 
 body.page-movies section.hero .maxwidth-920.center .overview-Container .poster-box a i, body.page-movies section.hero .maxwidth-920.center .overview-Container .poster-box .card.media-card .details .cta button i, .card.media-card .details .cta body.page-movies section.hero .maxwidth-920.center .overview-Container .poster-box button i, body.media-details section.hero .maxwidth-920.center .overview-Container .poster-box a i, body.media-details section.hero .maxwidth-920.center .overview-Container .poster-box .card.media-card .details .cta button i, .card.media-card .details .cta body.media-details section.hero .maxwidth-920.center .overview-Container .poster-box button i {
@@ -1634,6 +1636,9 @@ body.page-movies section.hero .maxwidth-920.center .overview-Container .detail-c
   display: -ms-flexbox;
   display: flex;
   padding-bottom: 8px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 body.page-movies .media-detail-info, body.media-details .media-detail-info {
