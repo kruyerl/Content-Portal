@@ -182,6 +182,5 @@ $(document).ready(function() {
     jQuery("a.trailer-toggle").YouTubePopUp();
   });
 
-
   //End Doc Ready
 });

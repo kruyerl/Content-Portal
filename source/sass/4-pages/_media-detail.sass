@@ -74,10 +74,13 @@ body.page-movies, body.media-details
       background-color: lighten($brand-primary-black, 10%)
       margin-top: 0px
       max-height: 150px
-      overflow: scroll
+      overflow-y: hidden
+      box-sizing: border-box
+
     .mdl-tabs
       box-sizing: border-box
       background-color: $brand-primary-black
+      overflow-x: hidden
       .mdl-tabs__tab
         display: flex
         justify-content: center
@@ -106,6 +109,7 @@ body.page-movies, body.media-details
       .mdl-tabs__tab-bar
         border-bottom: 1px solid transparent
         width: 100%
+        overflow-x: hidden !important
   .card-avatarcard
     box-shadow: 0px 2px 10px 0px rgba($brand-black,0.95)
     overflow: hidden

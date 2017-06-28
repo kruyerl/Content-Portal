@@ -424,6 +424,14 @@ body section .maxwidth-920 {
   padding: 1em;
 }
 
+* ::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-wrapper {
+  display: none;
+}
+
 ::-moz-selection {
   background: #0074D9;
 }
@@ -850,6 +858,8 @@ nav .back-links i:hover {
   padding: 2em;
   max-height: 150px;
   overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .mediaFilters .card-filtercard {
@@ -1857,12 +1867,14 @@ body.page-movies .media-detail-info .mdl-tabs__panel, body.media-details .media-
   background-color: #1c3549;
   margin-top: 0px;
   max-height: 150px;
-  overflow: scroll;
+  overflow-y: hidden;
+  box-sizing: border-box;
 }
 
 body.page-movies .media-detail-info .mdl-tabs, body.media-details .media-detail-info .mdl-tabs {
   box-sizing: border-box;
   background-color: #0E1A24;
+  overflow-x: hidden;
 }
 
 body.page-movies .media-detail-info .mdl-tabs .mdl-tabs__tab, body.media-details .media-detail-info .mdl-tabs .mdl-tabs__tab {
@@ -1918,6 +1930,7 @@ body.page-movies .media-detail-info .mdl-tabs .mdl-tabs__tab.is-active:after, bo
 body.page-movies .media-detail-info .mdl-tabs .mdl-tabs__tab-bar, body.media-details .media-detail-info .mdl-tabs .mdl-tabs__tab-bar {
   border-bottom: 1px solid transparent;
   width: 100%;
+  overflow-x: hidden !important;
 }
 
 body.page-movies .card-avatarcard, body.media-details .card-avatarcard {
