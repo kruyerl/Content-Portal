@@ -1,0 +1,52 @@
+#Trailer-toggle
+  cursor: pointer
+
+.flex-video-container
+  background-color: rgba($brand-primary-black, 0.5)
+  position: fixed
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  box-sizing: border-box
+  z-index: 999
+  display: flex
+  vertical-align: middle
+  align-items: center
+
+  opacity: 0
+  pointer-events: none
+  &.is-active
+    opacity: 1
+    pointer-events: all
+
+.flex-video-modal
+  opacity: 1
+  width: 100%
+  max-width: 600px
+  margin-left: auto
+  margin-right: auto
+
+
+
+
+
+
+.flex-video
+  height: 0
+  margin-bottom: 0.88889rem
+  overflow: hidden
+  padding-bottom: 56%
+  position: relative
+  margin-left: auto
+  margin-right: auto
+
+.flex-video iframe,
+.flex-video object,
+.flex-video embed,
+.flex-video video
+  height: 100%
+  position: absolute
+  top: 0
+  width: 100%
+  left: 0
