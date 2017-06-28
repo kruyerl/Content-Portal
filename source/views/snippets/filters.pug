@@ -11,7 +11,7 @@
         i.material-icons.md-30 date_range
       a.mdl-tabs__tab(href='#Actor-panel') 
         i.material-icons.md-30 perm_identity
-    #Genre-panel.mdl-tabs__panel
+    #Genre-panel.mdl-tabs__panel.wrapper
     
       .mdl-grid.filter-grid
     
@@ -46,7 +46,7 @@
           
       
             
-    #Rating-panel.mdl-tabs__panel
+    #Rating-panel.mdl-tabs__panel.wrapper
       
       .star-card.card-filtercard
         label.mdl-icon-toggle.mdl-js-icon-toggle.mdl-js-ripple-effect(for='star-toggle-1')
@@ -95,7 +95,7 @@
           i.mdl-icon-toggle__label.material-icons star 
           span.star-number 10
           
-    #Date-panel.mdl-tabs__panel
+    #Date-panel.mdl-tabs__panel.wrapper
       
       include ./filters-chart-range.pug
       .nstSlider(data-range_min='1940', data-range_max='2017', data-cur_min='1995', data-cur_max='2010')
@@ -108,7 +108,7 @@
         
         
     #Actor-panel.mdl-tabs__panel
-      .mdl-grid.filter-grid
+      .mdl-grid.filter-grid#wrapper
         include ./card-filtercard-checkbox.pug
         include ./card-filtercard-checkbox.pug
         include ./card-filtercard-checkbox.pug

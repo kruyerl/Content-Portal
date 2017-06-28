@@ -110,19 +110,7 @@ body.logged-in .YouTubePopUp-Wrap{ /* For WordPress */
 }
 
 .YouTubePopUp-Close{
-    position:absolute;
-    top:0;
-    cursor:pointer;
-    bottom:528px;
-    right:0px;
-    margin:auto 0;
-    width:24px;
-    height:24px;
-    background:url(../images/close.png) no-repeat;
-    background-size:24px 24px;
-    -webkit-background-size:24px 24px;
-    -moz-background-size:24px 24px;
-    -o-background-size:24px 24px;
+    display: none
 }
 
 .YouTubePopUp-Close:hover{

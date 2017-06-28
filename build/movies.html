@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="vendors/nstSlider/jquery.nstSlider.css"/>
     <link rel="stylesheet" href="assets/css/main.css"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
-    <link rel="stylesheet" type="text/css" href="YouTubePopUp.css"/>
   </head>
   <body class="page-movies">
     <nav>
@@ -100,7 +99,7 @@
         <div class="mediaFilters">
           <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
             <div class="mdl-tabs__tab-bar"><a class="mdl-tabs__tab" href="#Genre-panel"> <i class="material-icons md-30">movie_filter</i></a><a class="mdl-tabs__tab" href="#Age-panel"> <i class="material-icons md-30">child_friendly</i></a><a class="mdl-tabs__tab" href="#Rating-panel"> <i class="material-icons md-30">star_border</i></a><a class="mdl-tabs__tab" href="#Date-panel"> <i class="material-icons md-30">date_range</i></a><a class="mdl-tabs__tab" href="#Actor-panel"> <i class="material-icons md-30">perm_identity</i></a></div>
-            <div class="mdl-tabs__panel" id="Genre-panel">
+            <div class="mdl-tabs__panel wrapper" id="Genre-panel">
               <div class="mdl-grid filter-grid">
                 <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
                   <div class="card-filtercard" for="checkbox-genre-name">
@@ -276,7 +275,7 @@
                 </div>
               </div>
             </div>
-            <div class="mdl-tabs__panel" id="Rating-panel">
+            <div class="mdl-tabs__panel wrapper" id="Rating-panel">
               <div class="star-card card-filtercard">
                 <label class="mdl-icon-toggle mdl-js-icon-toggle mdl-js-ripple-effect" for="star-toggle-1">
                   <input class="mdl-icon-toggle__input" id="star-toggle-1" type="checkbox" checked=""/><i class="mdl-icon-toggle__label material-icons">star </i><span class="star-number">1</span>
@@ -310,7 +309,7 @@
                 </label>
               </div>
             </div>
-            <div class="mdl-tabs__panel" id="Date-panel">
+            <div class="mdl-tabs__panel wrapper" id="Date-panel">
               <div class="chart">
                 <div class="bargraph bar" data-baryear=""></div>
               </div>
@@ -325,7 +324,7 @@
               </div>
             </div>
             <div class="mdl-tabs__panel" id="Actor-panel">
-              <div class="mdl-grid filter-grid">
+              <div class="mdl-grid filter-grid" id="wrapper">
                 <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
                   <div class="card-filtercard" for="checkbox-genre-name">
                     <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
@@ -763,6 +762,7 @@
     <script src="./vendors/nstSlider/jquery.nstSlider.min.js"></script>
     <script src="./vendors/mdl/material.min.js"></script>
     <script src="./vendors/YouTubePopUp.jquery.js"></script>
+    <script src="./vendors/iscroll.js"></script>
     <script src="./assets/js/app.js"></script>
   </body>
 </html>

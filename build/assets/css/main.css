@@ -371,19 +371,7 @@ body.logged-in .YouTubePopUp-Wrap {
 }
 
 .YouTubePopUp-Close {
-  position: absolute;
-  top: 0;
-  cursor: pointer;
-  bottom: 528px;
-  right: 0px;
-  margin: auto 0;
-  width: 24px;
-  height: 24px;
-  background: url(../images/close.png) no-repeat;
-  background-size: 24px 24px;
-  -webkit-background-size: 24px 24px;
-  -moz-background-size: 24px 24px;
-  -o-background-size: 24px 24px;
+  display: none;
 }
 
 .YouTubePopUp-Close:hover {
@@ -424,11 +412,7 @@ body section .maxwidth-920 {
   padding: 1em;
 }
 
-* ::-webkit-scrollbar {
-  display: none;
-}
-
-.scrollbar-wrapper {
+::-webkit-scrollbar {
   display: none;
 }
 
@@ -860,6 +844,10 @@ nav .back-links i:hover {
   overflow: scroll;
   overflow-x: hidden;
   overflow-y: auto;
+}
+
+.mediaFilters .mdl-tabs__panel ::-webkit-scrollbar {
+  display: none;
 }
 
 .mediaFilters .card-filtercard {
