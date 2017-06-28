@@ -1,5 +1,7 @@
 body.page-landing
-
+  display: flex
+  flex-direction: column
+  flex: 1
 
   nav
     .back-links
@@ -53,19 +55,24 @@ body.page-landing
     display: flex
     justify-content: center
     flex-direction: column
-
-    padding-bottom: 4em
+    flex: 1
+    padding-bottom: -4em
     padding-top: 2em
     padding-left: 5vw
+    overflow: hidden
+
     h4
       color: $brand-white
       margin-top: 2em
     .media-card-slide
       display: flex
       position: relative
-      overflow: scroll
+      overflow: auto
       overflow-y: hidden
-      scrollbar
+      padding-bottom: 200px
+      margin-bottom: -50px
+      ::-webkit-scrollbar
+        display: none
       .card.media-card
         min-width: 140px
         max-width: 140px

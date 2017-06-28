@@ -1074,6 +1074,8 @@ nav .notifications .notification-container.is-active {
   box-shadow: 0px 2px 10px 0px rgba(17, 17, 17, 0.95);
   overflow: hidden;
   border-radius: 2px;
+  background-color: #0E1A24;
+  height: 100%;
 }
 
 .card.media-card.no-details img {
@@ -1305,6 +1307,19 @@ body.page-login section form div input, body.page-login section form div textare
   padding-right: 2em;
 }
 
+body.page-landing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
 body.page-landing nav .back-links {
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -1384,9 +1399,13 @@ body.page-landing section.content-container {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-bottom: 4em;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-bottom: -4em;
   padding-top: 2em;
   padding-left: 5vw;
+  overflow: hidden;
 }
 
 body.page-landing section.content-container h4 {
@@ -1399,8 +1418,14 @@ body.page-landing section.content-container .media-card-slide {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  overflow: scroll;
+  overflow: auto;
   overflow-y: hidden;
+  padding-bottom: 200px;
+  margin-bottom: -50px;
+}
+
+body.page-landing section.content-container .media-card-slide ::-webkit-scrollbar {
+  display: none;
 }
 
 body.page-landing section.content-container .media-card-slide .card.media-card {
