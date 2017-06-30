@@ -1862,8 +1862,10 @@ body.page-movies section.hero .maxwidth-920.center .overview-Container .detail-c
 }
 
 body.page-movies .media-detail-info, body.media-details .media-detail-info {
-  position: fixed;
+  position: absolute;
   bottom: 0px;
+  left: 0px;
+  right: 0px;
   margin: 0px;
   padding: 0px;
   background-color: #0E1A24;
