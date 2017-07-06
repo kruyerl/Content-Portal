@@ -1,0 +1,70 @@
+.modal#Support-modal
+  z-index: 9000
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  height: 100vh
+  width: 100vw
+  background-color: rgba($brand-primary-black, 0.7)
+  display: flex
+  justify-content: center
+  align-items: center
+  opacity: 0
+  pointer-events: none
+  transition: opacity 200ms ease-in-out
+  &.is-active
+    opacity: 1
+    pointer-events: auto
+    iframe
+      animation: slideIn 300ms cubic-bezier(0.42, 0, 0.4, 1.51)
+
+  .support-modal-overlay
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    height: 100vh
+    width: 100vw
+    cursor: pointer
+    display: flex
+    justify-content: center
+    align-items: center
+
+    iframe
+      position: fixed
+      border: none
+      width: 100%
+      max-width: 600px
+      height: 400px
+      box-shadow: 0px 2px 24px 0px rgba($brand-black,0.5)
+
+    .support-modal-close
+      position: absolute
+      top: 35px
+      right: 35px
+      color: $brand-white
+      cursor: pointer
+      z-index: 1
+      pointer-events: none
+
+@media screen and (max-width: 600px)
+  .modal#Support-modal
+    position: fixed
+
+    iframe#SupportIframe
+      max-width: 80vw
+      width: 80vw
+      height: 80vh
+
+
+
+
+@keyframes slideIn
+  0%
+    transform: translate(0, -50px)
+
+  100%
+    transform: translate(0, 0px)

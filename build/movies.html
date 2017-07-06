@@ -43,48 +43,14 @@
       <div class="back-links"><a href="/index.html"><i class="material-icons md-30">keyboard_backspace</i></a><a href="/index.html"><i class="material-icons md-30">home</i></a></div>
     </nav>
     <div class="modal" id="Account-modal">
-      <div class="account-modal-overlay" id="Account-modal-overlay"></div>
-      <section class="account-modal"><i class="account-modal-close material-icons md-30" id="Account-modal-close">close</i>
-        <div class="avatar-container">
-          <div class="avatar"><img src="http://fillmurray.com/200/300"/></div>
-          <h4>David Ryan</h4>
-        </div>
-        <div class="details-container">
-          <form action="/action_page.php">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="david@rhinoafrica.com"/>
-            <label for="cellphone">Cellphone</label>
-            <input type="tel" name="cellphone" id="cellphone" placeholder="+27 (0)21 234 1234"/>
-            <label for="activity">Summary Activity Email:</label>
-            <input list="email-activity" name="activity" placeholder="None"/>
-            <datalist id="email-activity">
-              <option value="None"></option>
-              <option value="Often"></option>
-              <option value="Everyday"></option>
-              <option value="All Day"></option>
-            </datalist>
-            <input type="submit" value="Submit"/>
-          </form>
-        </div>
-      </section>
+      <div class="account-modal-overlay" id="Account-modal-overlay"><i class="account-modal-close material-icons md-30" id="Account-modal-close">close</i>
+        <iframe id="accountIframe" src="../account.html"></iframe>
+      </div>
     </div>
     <div class="modal" id="Support-modal">
-      <div class="support-modal-overlay" id="Support-modal-overlay"></div>
-      <section class="support-modal"><i class="support-modal-close material-icons md-30" id="Support-modal-close">close</i>
-        <h3>How can we help?</h3>
-        <h6>We are looking forward to hearing from you</h6>
-        <form id="SupportForm" action="/action_page.php">
-          <input list="email-activity" name="activity" placeholder="Content Issue:"/>
-          <datalist id="email-activity">
-            <option value="None"></option>
-            <option value="Often"></option>
-            <option value="Everyday"></option>
-            <option value="All Day"></option>
-          </datalist>
-          <textarea name="message" form="SupportForm" placeholder="Message..."></textarea>
-          <input type="submit" value="Submit"/>
-        </form>
-      </section>
+      <div class="support-modal-overlay" id="Support-modal-overlay"><i class="support-modal-close material-icons md-30" id="Support-modal-close">close</i>
+        <iframe id="SupportIframe" src="../support.html"></iframe>
+      </div>
     </div>
     <div class="slideshow" data-slides="[      &quot;assets/img/fanart/banner1.jpg&quot;,      &quot;assets/img/fanart/banner2.jpg&quot;,      &quot;assets/img/fanart/banner3.jpg&quot;      ]"></div>
     <section class="hero flex">

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+html(lang="en")
+  include ./snippets/head.pug
+  body.page-support
+  
+    section.support-modal    
+      h3 How can we help?
+      h6 We are looking forward to hearing from you
+      form#SupportForm(action="/action_page.php")
+        input(list="email-activity" name="activity" placeholder="Content Issue:")
+        datalist( id="email-activity")
+          option( value="None")
+          option( value="Often")
+          option( value="Everyday")
+          option( value="All Day")
+        
+        textarea(name="message" form="SupportForm" placeholder="Message...")
+        input(type="submit" value="Submit") 

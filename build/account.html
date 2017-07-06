@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Currant - Content Portal Site </title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <link rel="shortcut icon" href="./assets/img/favicons/favicon.ico"/>
+    <link rel="stylesheet" href="vendors/mdl/material.min.css"/>
+    <link rel="stylesheet" href="vendors/nstSlider/jquery.nstSlider.css"/>
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  </head>
+  <body class="page-account">
+    <section class="account-modal">
+      <div class="avatar-container">
+        <div class="avatar"><img src="http://fillmurray.com/200/300"/></div>
+        <h4>David Ryan</h4>
+      </div>
+      <div class="details-container">
+        <form action="/action_page.php">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="david@rhinoafrica.com"/>
+          <label for="cellphone">Cellphone</label>
+          <input type="tel" name="cellphone" id="cellphone" placeholder="+27 (0)21 234 1234"/>
+          <label for="activity">Summary Activity Email:</label>
+          <input list="email-activity" name="activity" placeholder="None"/>
+          <datalist id="email-activity">
+            <option value="None"></option>
+            <option value="Often"></option>
+            <option value="Everyday"></option>
+            <option value="All Day"></option>
+          </datalist>
+          <input type="submit" value="Submit"/>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Currant - Content Portal Site </title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <link rel="shortcut icon" href="./assets/img/favicons/favicon.ico"/>
+    <link rel="stylesheet" href="vendors/mdl/material.min.css"/>
+    <link rel="stylesheet" href="vendors/nstSlider/jquery.nstSlider.css"/>
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  </head>
+  <body class="page-support">
+    <section class="support-modal">   
+      <h3>How can we help?</h3>
+      <h6>We are looking forward to hearing from you</h6>
+      <form id="SupportForm" action="/action_page.php">
+        <input list="email-activity" name="activity" placeholder="Content Issue:"/>
+        <datalist id="email-activity">
+          <option value="None"></option>
+          <option value="Often"></option>
+          <option value="Everyday"></option>
+          <option value="All Day"></option>
+        </datalist>
+        <textarea name="message" form="SupportForm" placeholder="Message..."></textarea>
+        <input type="submit" value="Submit"/>
+      </form>
+    </section>
+  </body>
+</html>
