@@ -1,4 +1,4 @@
-body.page-loading
+section#loadingOverlay
   display: flex
   width: 100vw
   height: 100vh
@@ -6,13 +6,15 @@ body.page-loading
   align-items: center
   background-color: $brand-primary-black
   color: $brand-white
-  section
+  div#loadingContainer
     display: flex
-    justify-content: center
-    align-items: center
+    opacity: 0
+    transition: opacity 400ms ease-in-out
+    &.show
+      opacity: 1
     i
       animation: rotater 1.5s linear infinite
-    h4
+    h4.loading-title
       margin: 0px
       margin-left: 24px
       color: $brand-white

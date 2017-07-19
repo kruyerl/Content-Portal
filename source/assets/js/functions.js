@@ -1,7 +1,6 @@
 $(document).ready(function() {
   //Start Doc Ready
-
-
+  $('#loadingContainer').addClass('show');
 
   // Account Modal ////////////////////////////
   $("#Account-modal-selector").click(function() {
@@ -185,4 +184,10 @@ $(document).ready(function() {
 
 
   //End Doc Ready
+});
+
+$(window).load(function(){
+   // PAGE IS FULLY LOADED
+   // FADE OUT YOUR OVERLAYING DIV
+  $('#loadingOverlay').fadeOut();
 });

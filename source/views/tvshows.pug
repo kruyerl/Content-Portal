@@ -2,6 +2,7 @@
 html(lang="en")
   include ./snippets/head.pug
   body.page-movies
+    include ./snippets/loading.pug
     include ./snippets/nav.pug
     include ./snippets/account-modal.pug
     include ./snippets/support-modal.pug
@@ -22,32 +23,32 @@ html(lang="en")
             input#SearchInput(type="input" placeholder="What are you looking for?")
             i#SearchFormIcon(class="material-icons md-30") search
           
-        include ./snippets/filters-tvshows.pug
-        
-        .mdl-grid.mediaGrid#MediaContainer
-          .mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--4-col-phone 
-            include ./snippets/media-card.pug
+            include ./snippets/filters-tvshows.pug
             
-          .mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--4-col-phone 
-            include ./snippets/media-card.pug
-          .mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--4-col-phone 
-            include ./snippets/media-card.pug
-          .mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--4-col-phone 
-            include ./snippets/media-card.pug
-        
-          .mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--4-col-phone 
-            include ./snippets/media-card.pug
+            .mdl-grid.mediaGrid#MediaContainer
+              .mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--4-col-phone 
+                include ./snippets/media-card.pug
+                
+              .mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--4-col-phone 
+                include ./snippets/media-card.pug
+              .mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--4-col-phone 
+                include ./snippets/media-card.pug
+              .mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--4-col-phone 
+                include ./snippets/media-card.pug
             
-          .mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--4-col-phone 
-            include ./snippets/media-card.pug
-          .mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--4-col-phone 
-            include ./snippets/media-card.pug
-          .mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--4-col-phone 
-            include ./snippets/media-card.pug
-      
-      
+              .mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--4-col-phone 
+                include ./snippets/media-card.pug
+                
+              .mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--4-col-phone 
+                include ./snippets/media-card.pug
+              .mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--4-col-phone 
+                include ./snippets/media-card.pug
+              .mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--4-col-phone 
+                include ./snippets/media-card.pug
+          
+          
+            
         
-    
         
     
     include ./snippets/script.pug

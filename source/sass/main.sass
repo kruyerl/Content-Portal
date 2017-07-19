@@ -1,5 +1,7 @@
 // This is the single file output by sass. It is intended to ONLY @import other files.
 
+// 0 - Load First
+
 
 // 1 - TOOLS
 @import '1-tools/bourbon/bourbon'
@@ -20,6 +22,7 @@
 
 
 // 3 - Modules
+@import '3-modules/loading-page'
 @import '3-modules/flex-video'
 @import '3-modules/nav'
 @import '3-modules/filters'
@@ -32,8 +35,9 @@
 
 
 
+
 // 4 - pages
-@import '4-pages/loading-page'
+
 @import '4-pages/login-page'
 @import '4-pages/landing-page'
 @import '4-pages/account'

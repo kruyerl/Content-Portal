@@ -11,6 +11,11 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
   </head>
   <body class="page-movies">
+    <section id="loadingOverlay">
+      <div id="loadingContainer"><i class="material-icons md-30">cached</i>
+        <h4 class="loading-title">Loading your experience</h4>
+      </div>
+    </section>
     <nav>
       <div class="right-nav">
         <div class="links"><i class="material-icons md-30" id="Support-modal-selector">live_help</i>
@@ -60,677 +65,677 @@
           <h5 class="white">Up to date with your favourite show? <br> Manage your movie library here.</h5>
           <form id="SearchForm" action="/action_page.php">
             <input id="SearchInput" type="input" placeholder="What are you looking for?"/><i class="material-icons md-30" id="SearchFormIcon">search</i>
+            <div class="mediaFilters">
+              <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+                <div class="mdl-tabs__tab-bar"><a class="mdl-tabs__tab" href="#Genre-panel"> <i class="material-icons md-30">movie_filter</i></a><a class="mdl-tabs__tab" href="#Age-panel"> <i class="material-icons md-30">child_friendly</i></a><a class="mdl-tabs__tab" href="#Rating-panel"> <i class="material-icons md-30">star_border</i></a><a class="mdl-tabs__tab" href="#Date-panel"> <i class="material-icons md-30">date_range</i></a><a class="mdl-tabs__tab" href="#Actor-panel"> <i class="material-icons md-30">perm_identity</i></a><a class="mdl-tabs__tab" href="#InProgress-panel"> <i class="material-icons md-30">schedule</i></a></div>
+                <div class="mdl-tabs__panel" id="Genre-panel">
+                  <div class="mdl-grid filter-grid">
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mdl-tabs__panel" id="Age-panel">
+                  <div class="mdl-grid filter-grid">
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mdl-tabs__panel" id="Rating-panel">
+                  <div class="star-card card-filtercard">
+                    <label class="mdl-icon-toggle mdl-js-icon-toggle mdl-js-ripple-effect" for="star-toggle-1">
+                      <input class="mdl-icon-toggle__input" id="star-toggle-1" type="checkbox" checked=""/><i class="mdl-icon-toggle__label material-icons">star </i><span class="star-number">1</span>
+                    </label>
+                    <label class="mdl-icon-toggle mdl-js-icon-toggle mdl-js-ripple-effect" for="star-toggle-2">
+                      <input class="mdl-icon-toggle__input" id="star-toggle-2" type="checkbox" checked=""/><i class="mdl-icon-toggle__label material-icons">star </i><span class="star-number">2</span>
+                    </label>
+                    <label class="mdl-icon-toggle mdl-js-icon-toggle mdl-js-ripple-effect" for="star-toggle-3">
+                      <input class="mdl-icon-toggle__input" id="star-toggle-3" type="checkbox" checked=""/><i class="mdl-icon-toggle__label material-icons">star </i><span class="star-number">3  </span>
+                    </label>
+                    <label class="mdl-icon-toggle mdl-js-icon-toggle mdl-js-ripple-effect" for="star-toggle-4">
+                      <input class="mdl-icon-toggle__input" id="star-toggle-4" type="checkbox" checked=""/><i class="mdl-icon-toggle__label material-icons">star </i><span class="star-number">4  </span>
+                    </label>
+                    <label class="mdl-icon-toggle mdl-js-icon-toggle mdl-js-ripple-effect" for="star-toggle-5">
+                      <input class="mdl-icon-toggle__input" id="star-toggle-5" type="checkbox" checked=""/><i class="mdl-icon-toggle__label material-icons">star </i><span class="star-number">5</span>
+                    </label>
+                    <label class="mdl-icon-toggle mdl-js-icon-toggle mdl-js-ripple-effect" for="star-toggle-6">
+                      <input class="mdl-icon-toggle__input" id="star-toggle-6" type="checkbox" checked=""/><i class="mdl-icon-toggle__label material-icons">star </i><span class="star-number">6</span>
+                    </label>
+                    <label class="mdl-icon-toggle mdl-js-icon-toggle mdl-js-ripple-effect" for="star-toggle-7">
+                      <input class="mdl-icon-toggle__input" id="star-toggle-7" type="checkbox" checked=""/><i class="mdl-icon-toggle__label material-icons">star </i><span class="star-number">7  </span>
+                    </label>
+                    <label class="mdl-icon-toggle mdl-js-icon-toggle mdl-js-ripple-effect" for="star-toggle-8">
+                      <input class="mdl-icon-toggle__input" id="star-toggle-8" type="checkbox" checked=""/><i class="mdl-icon-toggle__label material-icons">star </i><span class="star-number">8</span>
+                    </label>
+                    <label class="mdl-icon-toggle mdl-js-icon-toggle mdl-js-ripple-effect" for="star-toggle-9">
+                      <input class="mdl-icon-toggle__input" id="star-toggle-9" type="checkbox" checked=""/><i class="mdl-icon-toggle__label material-icons">star </i><span class="star-number">9</span>
+                    </label>
+                    <label class="mdl-icon-toggle mdl-js-icon-toggle mdl-js-ripple-effect" for="star-toggle-10">
+                      <input class="mdl-icon-toggle__input" id="star-toggle-10" type="checkbox" checked=""/><i class="mdl-icon-toggle__label material-icons">star </i><span class="star-number">10</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="mdl-tabs__panel" id="Date-panel">
+                  <div class="chart">
+                    <div class="bargraph bar" data-baryear=""></div>
+                  </div>
+                  <div class="nstSlider" data-range_min="1940" data-range_max="2017" data-cur_min="1995" data-cur_max="2010">
+                    <div class="bar"></div>
+                    <div class="slide-grip leftGrip">
+                      <div class="slide-label leftLabel" id="leftLabel"></div>
+                    </div>
+                    <div class="slide-grip rightGrip">
+                      <div class="slide-label rightLabel" id="rightLabel"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mdl-tabs__panel" id="Actor-panel">
+                  <div class="mdl-grid filter-grid">
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mdl-tabs__panel" id="InProgress-panel">
+                  <div class="mdl-grid filter-grid">
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
+                      <div class="card-filtercard" for="checkbox-genre-name">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                          <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mdl-grid mediaGrid" id="MediaContainer">
+              <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone"> 
+                <div class="card media-card"><img src="https://s-media-cache-ak0.pinimg.com/736x/06/cb/33/06cb338efcf3ac37a90caad05fd356a2.jpg"/>
+                  <div class="details">
+                    <div class="heading-container"><a class="thick">The crew of a colony ship, bound for</a></div>
+                    <p>The crew of a colony ship, bound for a remote planet, discover an uncharted paradise with a threat beyond their imagination, and must attempt a harrowing escape.</p>
+                    <div class="cta"><a href="/movies-detail.html">
+                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect">View Details</button></a><a href="#">
+                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Transfer</button></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone"> 
+                <div class="card media-card"><img src="https://s-media-cache-ak0.pinimg.com/736x/06/cb/33/06cb338efcf3ac37a90caad05fd356a2.jpg"/>
+                  <div class="details">
+                    <div class="heading-container"><a class="thick">The crew of a colony ship, bound for</a></div>
+                    <p>The crew of a colony ship, bound for a remote planet, discover an uncharted paradise with a threat beyond their imagination, and must attempt a harrowing escape.</p>
+                    <div class="cta"><a href="/movies-detail.html">
+                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect">View Details</button></a><a href="#">
+                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Transfer</button></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone"> 
+                <div class="card media-card"><img src="https://s-media-cache-ak0.pinimg.com/736x/06/cb/33/06cb338efcf3ac37a90caad05fd356a2.jpg"/>
+                  <div class="details">
+                    <div class="heading-container"><a class="thick">The crew of a colony ship, bound for</a></div>
+                    <p>The crew of a colony ship, bound for a remote planet, discover an uncharted paradise with a threat beyond their imagination, and must attempt a harrowing escape.</p>
+                    <div class="cta"><a href="/movies-detail.html">
+                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect">View Details</button></a><a href="#">
+                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Transfer</button></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone"> 
+                <div class="card media-card"><img src="https://s-media-cache-ak0.pinimg.com/736x/06/cb/33/06cb338efcf3ac37a90caad05fd356a2.jpg"/>
+                  <div class="details">
+                    <div class="heading-container"><a class="thick">The crew of a colony ship, bound for</a></div>
+                    <p>The crew of a colony ship, bound for a remote planet, discover an uncharted paradise with a threat beyond their imagination, and must attempt a harrowing escape.</p>
+                    <div class="cta"><a href="/movies-detail.html">
+                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect">View Details</button></a><a href="#">
+                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Transfer</button></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone"> 
+                <div class="card media-card"><img src="https://s-media-cache-ak0.pinimg.com/736x/06/cb/33/06cb338efcf3ac37a90caad05fd356a2.jpg"/>
+                  <div class="details">
+                    <div class="heading-container"><a class="thick">The crew of a colony ship, bound for</a></div>
+                    <p>The crew of a colony ship, bound for a remote planet, discover an uncharted paradise with a threat beyond their imagination, and must attempt a harrowing escape.</p>
+                    <div class="cta"><a href="/movies-detail.html">
+                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect">View Details</button></a><a href="#">
+                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Transfer</button></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone"> 
+                <div class="card media-card"><img src="https://s-media-cache-ak0.pinimg.com/736x/06/cb/33/06cb338efcf3ac37a90caad05fd356a2.jpg"/>
+                  <div class="details">
+                    <div class="heading-container"><a class="thick">The crew of a colony ship, bound for</a></div>
+                    <p>The crew of a colony ship, bound for a remote planet, discover an uncharted paradise with a threat beyond their imagination, and must attempt a harrowing escape.</p>
+                    <div class="cta"><a href="/movies-detail.html">
+                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect">View Details</button></a><a href="#">
+                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Transfer</button></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone"> 
+                <div class="card media-card"><img src="https://s-media-cache-ak0.pinimg.com/736x/06/cb/33/06cb338efcf3ac37a90caad05fd356a2.jpg"/>
+                  <div class="details">
+                    <div class="heading-container"><a class="thick">The crew of a colony ship, bound for</a></div>
+                    <p>The crew of a colony ship, bound for a remote planet, discover an uncharted paradise with a threat beyond their imagination, and must attempt a harrowing escape.</p>
+                    <div class="cta"><a href="/movies-detail.html">
+                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect">View Details</button></a><a href="#">
+                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Transfer</button></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone"> 
+                <div class="card media-card"><img src="https://s-media-cache-ak0.pinimg.com/736x/06/cb/33/06cb338efcf3ac37a90caad05fd356a2.jpg"/>
+                  <div class="details">
+                    <div class="heading-container"><a class="thick">The crew of a colony ship, bound for</a></div>
+                    <p>The crew of a colony ship, bound for a remote planet, discover an uncharted paradise with a threat beyond their imagination, and must attempt a harrowing escape.</p>
+                    <div class="cta"><a href="/movies-detail.html">
+                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect">View Details</button></a><a href="#">
+                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Transfer</button></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </form>
-        </div>
-        <div class="mediaFilters">
-          <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
-            <div class="mdl-tabs__tab-bar"><a class="mdl-tabs__tab" href="#Genre-panel"> <i class="material-icons md-30">movie_filter</i></a><a class="mdl-tabs__tab" href="#Age-panel"> <i class="material-icons md-30">child_friendly</i></a><a class="mdl-tabs__tab" href="#Rating-panel"> <i class="material-icons md-30">star_border</i></a><a class="mdl-tabs__tab" href="#Date-panel"> <i class="material-icons md-30">date_range</i></a><a class="mdl-tabs__tab" href="#Actor-panel"> <i class="material-icons md-30">perm_identity</i></a><a class="mdl-tabs__tab" href="#InProgress-panel"> <i class="material-icons md-30">schedule</i></a></div>
-            <div class="mdl-tabs__panel" id="Genre-panel">
-              <div class="mdl-grid filter-grid">
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="mdl-tabs__panel" id="Age-panel">
-              <div class="mdl-grid filter-grid">
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="mdl-tabs__panel" id="Rating-panel">
-              <div class="star-card card-filtercard">
-                <label class="mdl-icon-toggle mdl-js-icon-toggle mdl-js-ripple-effect" for="star-toggle-1">
-                  <input class="mdl-icon-toggle__input" id="star-toggle-1" type="checkbox" checked=""/><i class="mdl-icon-toggle__label material-icons">star </i><span class="star-number">1</span>
-                </label>
-                <label class="mdl-icon-toggle mdl-js-icon-toggle mdl-js-ripple-effect" for="star-toggle-2">
-                  <input class="mdl-icon-toggle__input" id="star-toggle-2" type="checkbox" checked=""/><i class="mdl-icon-toggle__label material-icons">star </i><span class="star-number">2</span>
-                </label>
-                <label class="mdl-icon-toggle mdl-js-icon-toggle mdl-js-ripple-effect" for="star-toggle-3">
-                  <input class="mdl-icon-toggle__input" id="star-toggle-3" type="checkbox" checked=""/><i class="mdl-icon-toggle__label material-icons">star </i><span class="star-number">3  </span>
-                </label>
-                <label class="mdl-icon-toggle mdl-js-icon-toggle mdl-js-ripple-effect" for="star-toggle-4">
-                  <input class="mdl-icon-toggle__input" id="star-toggle-4" type="checkbox" checked=""/><i class="mdl-icon-toggle__label material-icons">star </i><span class="star-number">4  </span>
-                </label>
-                <label class="mdl-icon-toggle mdl-js-icon-toggle mdl-js-ripple-effect" for="star-toggle-5">
-                  <input class="mdl-icon-toggle__input" id="star-toggle-5" type="checkbox" checked=""/><i class="mdl-icon-toggle__label material-icons">star </i><span class="star-number">5</span>
-                </label>
-                <label class="mdl-icon-toggle mdl-js-icon-toggle mdl-js-ripple-effect" for="star-toggle-6">
-                  <input class="mdl-icon-toggle__input" id="star-toggle-6" type="checkbox" checked=""/><i class="mdl-icon-toggle__label material-icons">star </i><span class="star-number">6</span>
-                </label>
-                <label class="mdl-icon-toggle mdl-js-icon-toggle mdl-js-ripple-effect" for="star-toggle-7">
-                  <input class="mdl-icon-toggle__input" id="star-toggle-7" type="checkbox" checked=""/><i class="mdl-icon-toggle__label material-icons">star </i><span class="star-number">7  </span>
-                </label>
-                <label class="mdl-icon-toggle mdl-js-icon-toggle mdl-js-ripple-effect" for="star-toggle-8">
-                  <input class="mdl-icon-toggle__input" id="star-toggle-8" type="checkbox" checked=""/><i class="mdl-icon-toggle__label material-icons">star </i><span class="star-number">8</span>
-                </label>
-                <label class="mdl-icon-toggle mdl-js-icon-toggle mdl-js-ripple-effect" for="star-toggle-9">
-                  <input class="mdl-icon-toggle__input" id="star-toggle-9" type="checkbox" checked=""/><i class="mdl-icon-toggle__label material-icons">star </i><span class="star-number">9</span>
-                </label>
-                <label class="mdl-icon-toggle mdl-js-icon-toggle mdl-js-ripple-effect" for="star-toggle-10">
-                  <input class="mdl-icon-toggle__input" id="star-toggle-10" type="checkbox" checked=""/><i class="mdl-icon-toggle__label material-icons">star </i><span class="star-number">10</span>
-                </label>
-              </div>
-            </div>
-            <div class="mdl-tabs__panel" id="Date-panel">
-              <div class="chart">
-                <div class="bargraph bar" data-baryear=""></div>
-              </div>
-              <div class="nstSlider" data-range_min="1940" data-range_max="2017" data-cur_min="1995" data-cur_max="2010">
-                <div class="bar"></div>
-                <div class="slide-grip leftGrip">
-                  <div class="slide-label leftLabel" id="leftLabel"></div>
-                </div>
-                <div class="slide-grip rightGrip">
-                  <div class="slide-label rightLabel" id="rightLabel"></div>
-                </div>
-              </div>
-            </div>
-            <div class="mdl-tabs__panel" id="Actor-panel">
-              <div class="mdl-grid filter-grid">
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="mdl-tabs__panel" id="InProgress-panel">
-              <div class="mdl-grid filter-grid">
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--2-col-phone"> 
-                  <div class="card-filtercard" for="checkbox-genre-name">
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input class="mdl-checkbox__input" id="checkbox-genre-name" type="checkbox" unchecked="unchecked"/><span class="mdl-checkbox__label">Text Label</span>
-                    </label>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="mdl-grid mediaGrid" id="MediaContainer">
-          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone"> 
-            <div class="card media-card"><img src="https://s-media-cache-ak0.pinimg.com/736x/06/cb/33/06cb338efcf3ac37a90caad05fd356a2.jpg"/>
-              <div class="details">
-                <div class="heading-container"><a class="thick">The crew of a colony ship, bound for</a></div>
-                <p>The crew of a colony ship, bound for a remote planet, discover an uncharted paradise with a threat beyond their imagination, and must attempt a harrowing escape.</p>
-                <div class="cta"><a href="/movies-detail.html">
-                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect">View Details</button></a><a href="#">
-                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Transfer</button></a></div>
-              </div>
-            </div>
-          </div>
-          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone"> 
-            <div class="card media-card"><img src="https://s-media-cache-ak0.pinimg.com/736x/06/cb/33/06cb338efcf3ac37a90caad05fd356a2.jpg"/>
-              <div class="details">
-                <div class="heading-container"><a class="thick">The crew of a colony ship, bound for</a></div>
-                <p>The crew of a colony ship, bound for a remote planet, discover an uncharted paradise with a threat beyond their imagination, and must attempt a harrowing escape.</p>
-                <div class="cta"><a href="/movies-detail.html">
-                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect">View Details</button></a><a href="#">
-                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Transfer</button></a></div>
-              </div>
-            </div>
-          </div>
-          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone"> 
-            <div class="card media-card"><img src="https://s-media-cache-ak0.pinimg.com/736x/06/cb/33/06cb338efcf3ac37a90caad05fd356a2.jpg"/>
-              <div class="details">
-                <div class="heading-container"><a class="thick">The crew of a colony ship, bound for</a></div>
-                <p>The crew of a colony ship, bound for a remote planet, discover an uncharted paradise with a threat beyond their imagination, and must attempt a harrowing escape.</p>
-                <div class="cta"><a href="/movies-detail.html">
-                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect">View Details</button></a><a href="#">
-                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Transfer</button></a></div>
-              </div>
-            </div>
-          </div>
-          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone"> 
-            <div class="card media-card"><img src="https://s-media-cache-ak0.pinimg.com/736x/06/cb/33/06cb338efcf3ac37a90caad05fd356a2.jpg"/>
-              <div class="details">
-                <div class="heading-container"><a class="thick">The crew of a colony ship, bound for</a></div>
-                <p>The crew of a colony ship, bound for a remote planet, discover an uncharted paradise with a threat beyond their imagination, and must attempt a harrowing escape.</p>
-                <div class="cta"><a href="/movies-detail.html">
-                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect">View Details</button></a><a href="#">
-                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Transfer</button></a></div>
-              </div>
-            </div>
-          </div>
-          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone"> 
-            <div class="card media-card"><img src="https://s-media-cache-ak0.pinimg.com/736x/06/cb/33/06cb338efcf3ac37a90caad05fd356a2.jpg"/>
-              <div class="details">
-                <div class="heading-container"><a class="thick">The crew of a colony ship, bound for</a></div>
-                <p>The crew of a colony ship, bound for a remote planet, discover an uncharted paradise with a threat beyond their imagination, and must attempt a harrowing escape.</p>
-                <div class="cta"><a href="/movies-detail.html">
-                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect">View Details</button></a><a href="#">
-                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Transfer</button></a></div>
-              </div>
-            </div>
-          </div>
-          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone"> 
-            <div class="card media-card"><img src="https://s-media-cache-ak0.pinimg.com/736x/06/cb/33/06cb338efcf3ac37a90caad05fd356a2.jpg"/>
-              <div class="details">
-                <div class="heading-container"><a class="thick">The crew of a colony ship, bound for</a></div>
-                <p>The crew of a colony ship, bound for a remote planet, discover an uncharted paradise with a threat beyond their imagination, and must attempt a harrowing escape.</p>
-                <div class="cta"><a href="/movies-detail.html">
-                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect">View Details</button></a><a href="#">
-                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Transfer</button></a></div>
-              </div>
-            </div>
-          </div>
-          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone"> 
-            <div class="card media-card"><img src="https://s-media-cache-ak0.pinimg.com/736x/06/cb/33/06cb338efcf3ac37a90caad05fd356a2.jpg"/>
-              <div class="details">
-                <div class="heading-container"><a class="thick">The crew of a colony ship, bound for</a></div>
-                <p>The crew of a colony ship, bound for a remote planet, discover an uncharted paradise with a threat beyond their imagination, and must attempt a harrowing escape.</p>
-                <div class="cta"><a href="/movies-detail.html">
-                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect">View Details</button></a><a href="#">
-                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Transfer</button></a></div>
-              </div>
-            </div>
-          </div>
-          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone"> 
-            <div class="card media-card"><img src="https://s-media-cache-ak0.pinimg.com/736x/06/cb/33/06cb338efcf3ac37a90caad05fd356a2.jpg"/>
-              <div class="details">
-                <div class="heading-container"><a class="thick">The crew of a colony ship, bound for</a></div>
-                <p>The crew of a colony ship, bound for a remote planet, discover an uncharted paradise with a threat beyond their imagination, and must attempt a harrowing escape.</p>
-                <div class="cta"><a href="/movies-detail.html">
-                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect">View Details</button></a><a href="#">
-                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Transfer</button></a></div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
