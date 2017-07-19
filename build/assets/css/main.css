@@ -1006,6 +1006,16 @@ nav .back-links i:hover {
   background-color: #003d73;
 }
 
+a#CloseFilters, .card.media-card .details .cta button#CloseFilters {
+  transition: all 150ms ease-in-out;
+}
+
+a#CloseFilters.is-active, .card.media-card .details .cta button#CloseFilters.is-active {
+  overflow: hidden;
+  padding: 0;
+  max-width: 0px;
+}
+
 nav .notifications {
   position: relative;
   margin-left: 20px;

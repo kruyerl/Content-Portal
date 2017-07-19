@@ -11,10 +11,16 @@
         i.material-icons.md-30 date_range
       a.mdl-tabs__tab(href='#Actor-panel') 
         i.material-icons.md-30 perm_identity
+      a#CloseFilters.mdl-tabs__tab.is-active(href='#Close-panel') 
+        i.material-icons.md-30 expand_less
+    
+    
     #Genre-panel.mdl-tabs__panel.wrapper
     
       .mdl-grid.filter-grid
     
+    
+        
         include ./card-filtercard-checkbox.pug
         include ./card-filtercard-checkbox.pug
         include ./card-filtercard-checkbox.pug
