@@ -22,7 +22,7 @@
     background-color: lighten($brand-primary-black, 10%)
     margin-top: 0px
     padding: 2em
-    max-height: 150px
+    max-height: 250px
     overflow: scroll
     overflow-x: hidden
     overflow-y: auto
@@ -45,6 +45,7 @@
       display: flex
       flex-wrap: wrap
       justify-content: space-around
+      margin-bottom: 20px
 
       label.mdl-icon-toggle
         display: flex
@@ -69,6 +70,7 @@
         pointer-events: none
         color: $brand-primary-black
         box-sizing: border-box
+        text-align: center
         padding: 10px
         //padding-left: 4px
         position: relative
@@ -102,3 +104,60 @@ a#CloseFilters
     overflow: hidden
     padding: 0
     max-width: 0px
+
+
+.star-card
+  i.starFilter-icon
+    color: $brand-primary-black
+    opacity: 0.3
+    transition: all 400ms ease-in-out
+    &.is-active
+      color: $brand-primary
+      opacity: 1
+
+
+
+
+#actorFilterInput
+
+
+#actorFilterUL, #genreFilterUL
+  /* Remove default list styling
+  list-style-type: none
+  padding: 0
+  margin: 0
+  width: 100%
+  display: flex
+  flex-direction: column
+  li
+    display: flex
+    flex: 1
+    order: 3
+    border: 1px solid #ddd
+    /* Add a border to all links
+    margin-top: -1px
+    /* Prevent double borders
+    background-color: $brand-white
+    /* Grey background color
+    padding: 8px
+    /* Add some padding
+    text-decoration: none
+    /* Remove default text underline
+
+    color: $brand-primary-black
+    /* Add a black text color
+    display: block
+    /* Make it into a block element to fill the whole list
+    cursor: pointer
+    &.is-active
+      order: 2
+    &.header
+      background-color: #e2e2e2
+      /* Add a darker background color for headers
+      cursor: default
+      /* Change cursor style
+      &.selected
+        order: 1
+    &:hover:not(.header)
+      background-color: #eee
+      /* Add a hover effect to all links, except for headers

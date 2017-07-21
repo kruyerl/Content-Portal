@@ -50,24 +50,24 @@ $(document).ready(function() {
 
 
   // slideshow ////////////////////////////
-    (function($) {
+  (function($) {
 
-      'use strict';
+    'use strict';
 
-      var $slides = $('[data-slides]');
-      var images = $slides.data('slides');
-      var count = images.length;
-      var slideshow = function() {
-        $slides
-          .css('background-image', 'url("' + images[Math.floor(Math.random() * count)] + '")')
-          .show(0, function() {
-            setTimeout(slideshow, 10000);
-          });
-      };
+    var $slides = $('[data-slides]');
+    var images = $slides.data('slides');
+    var count = images.length;
+    var slideshow = function() {
+      $slides
+        .css('background-image', 'url("' + images[Math.floor(Math.random() * count)] + '")')
+        .show(0, function() {
+          setTimeout(slideshow, 10000);
+        });
+    };
 
-      slideshow();
+    slideshow();
 
-    }(jQuery));
+  }(jQuery));
 
 
 
@@ -110,36 +110,15 @@ $(document).ready(function() {
 
 
 
-  // Histogram Slider ////////////////////////////
-  $(document).ready(function() {
-    var yeartotal = Math.abs($('.nstSlider').data("range_max") - $('.nstSlider').data("range_min")) + 1;
-    var b = 0.1;
-    var e = $('.bargraph');
-    for (var i = 0; i < yeartotal; i++) {
-      e.clone().insertAfter(e);
-    }
-    var number1 = parseInt($('#leftLabel').text());
-    var number2 = parseInt($('#rightLabel').text());
-    var numMax = Math.max(number1, number2);
-    var numMin = Math.min(number1, number2);
-    var countLow = Math.abs(numMin - $('.nstSlider').data("range_min"));
-    var countHigh = Math.abs($('.nstSlider').data("range_max") - numMax);
-    var yeartotalb = Math.abs($('.nstSlider').data("range_max") - $('.nstSlider').data("range_min"));
-    var countHighest = yeartotalb - countHigh + 1;
-    i = 1;
-    $(".bargraph").each(function() {
-      if (i <= countHighest && i >= countLow) {
-        $(".bargraph:nth-child(" + i + ")").addClass("is-active");
-      } else {
-        $(".bargraph:nth-child(" + i + ")").removeClass("is-active");
-      }
-      // FIXME: Temporary Math random height selector
-      b = Math.floor(Math.random() * (0 + 100));
-      $(".bargraph:nth-child(" + i + ")").css('height', b + '%');
-      i++;
-    });
-  });
-  $('.nstSlider').nstSlider({
+  // Filters ////////////////////////////
+
+
+  //Year Filter
+  initialiseYearGraph();
+  updateYearRating(); //initial display
+
+  $('#YearFilter').nstSlider({
+
     "left_grip_selector": ".leftGrip",
     "right_grip_selector": ".rightGrip",
     "value_bar_selector": ".bar",
@@ -147,47 +126,191 @@ $(document).ready(function() {
       $(this).parent().find('.leftLabel').text(leftValue);
       $(this).parent().find('.rightLabel').text(rightValue);
 
-      var number1 = parseInt($('#leftLabel').text());
-      var number2 = parseInt($('#rightLabel').text());
-      var numMax = Math.max(number1, number2);
-      var numMin = Math.min(number1, number2);
-      var countLow = Math.abs(numMin - $('.nstSlider').data("range_min"));
-      var countHigh = Math.abs($('.nstSlider').data("range_max") - numMax);
-      var yeartotalb = Math.abs($('.nstSlider').data("range_max") - $('.nstSlider').data("range_min"));
-      var countHighest = yeartotalb - countHigh + 1;
-      console.log(countLow + " and " + countHighest);
-      var i = 1;
-      $(".bargraph").each(function() {
-
-        if (i <= countHighest && i >= countLow) {
-          $(".bargraph:nth-child(" + i + ")").addClass("is-active");
-        } else {
-          $(".bargraph:nth-child(" + i + ")").removeClass("is-active");
-        }
-        i++;
-      });
+      updateYearRating(); //Updates Stars
     }
   });
 
+  function updateYearRating() {
+    var slidervalue1 = parseInt($('.yearFilter-leftLabel').text());
+    var slidervalue2 = parseInt($('.yearFilter-rightLabel').text());
+    var highvalue = Math.max(slidervalue1, slidervalue2);
+    var lowvalue = Math.min(slidervalue1, slidervalue2);
+    var countLow = Math.abs(lowvalue - $('#YearFilter').data("range_min"));
+    var countHigh = Math.abs($('#YearFilter').data("range_max") - highvalue);
+    var yeartotalb = Math.abs($('#YearFilter').data("range_max") - $('#YearFilter').data("range_min"));
+    var countHighest = yeartotalb - countHigh + 1;
+    i = 1;
+    $(".yearFilterBar").each(function() {
+      if (i <= countHighest && i >= countLow) {
+        $(".yearFilterBar:nth-child(" + i + ")").addClass("is-active");
+      } else {
+        $(".yearFilterBar:nth-child(" + i + ")").removeClass("is-active");
+      }
+      i++;
+    });
+  }
 
-  $('.season-container').find('.season-toggle').on('click', function (e) {
+  function initialiseYearGraph() {
+
+    var e = $('.yearFilterBar');
+
+    for (var i = $('#YearFilter').data("range_min"); i <= $('#YearFilter').data("range_max"); i++) {
+      e.clone().insertAfter(e);
+    }
+
+    //feed values into array
+    var a = {};
+    var b = 0;
+    var c = 1;
+    var l = 0;
+    for (i = $('#YearFilter').data("range_min"); i <= $('#YearFilter').data("range_max"); i++) {
+      b = Math.floor(Math.random() * (0 + 100)); // feeds random value into array
+      a[i] = b;
+    }
+    var array_values = [];
+
+    for (var key in a) {
+      array_values.push(a[key]);
+      if (a[key] > l) {
+        l = a[key]; //Finds largest number to use for percentages of graph height
+      }
+    }
+
+    //turns array into % and sets height of bargraph
+    for (i = $('#YearFilter').data("range_min"); i <= $('#YearFilter').data("range_max"); i++) {
+      b = a[i] / l * 100;
+      b = Math.round(b);
+      $(".bargraph:nth-child(" + c + ")").css('height', b + '%');
+      c++;
+    }
+
+  }
+  //Star Filter
+
+  updateStarRating(); //initial display
+
+  $('#StarFilter').nstSlider({
+    "left_grip_selector": ".leftGrip",
+    "right_grip_selector": ".rightGrip",
+    "value_bar_selector": ".bar",
+    "value_changed_callback": function(cause, leftValue, rightValue) {
+      $(this).parent().find('.leftLabel').text(leftValue);
+      $(this).parent().find('.rightLabel').text(rightValue);
+
+      updateStarRating(); //Updates Stars
+    }
+  });
+
+  function updateStarRating() {
+
+    var slidervalue1 = parseInt($('.starFilter-leftlabel').text());
+    var slidervalue2 = parseInt($('.starFilter-rightlabel').text());
+    var highvalue = Math.max(slidervalue1, slidervalue2);
+    var lowvalue = Math.min(slidervalue1, slidervalue2);
+
+    var e = $('.starFilter-icon');
+    for (var i = 1; i < 11; i++) {
+
+      if (i <= highvalue && i >= lowvalue) {
+        $(".starFilter-icon:nth-child(" + i + ")").addClass("is-active");
+      } else {
+        $(".starFilter-icon:nth-child(" + i + ")").removeClass("is-active");
+      }
+    }
+  }
+
+  //Actor Filter
+  $("#actorFilterInput").keyup( function(){
+    actorFilter();
+  });
+  function actorFilter() {
+    // Declare variables
+    var input = null;
+    var filter = null;
+    var ul = null;
+    var li = null;
+    a = 0;
+    i = null;
+    input = document.getElementById('actorFilterInput');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("actorFilterUL");
+    li = ul.getElementsByTagName('li');
+    // Loop through all list items, and hide those who don't match the search query
+
+    for (i = 0; i < li.length; i++) {
+      if (li[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      }else {
+        li[i].style.display = "none";
+        $('.actorLi.is-active').css('display', 'block');
+      }
+    }
+
+  }
+  $('.actorsName').click(function() {
+    $(this).toggleClass("is-active");
+  });
+
+  //Genre Filter
+  $("#genreFilterInput").keyup( function(){
+    genreFilter();
+  });
+  function genreFilter() {
+    // Declare variables
+    var input = null;
+    var filter = null;
+    var ul = null;
+    var li = null;
+    a = 0;
+    i = null;
+    input = document.getElementById('genreFilterInput');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("genreFilterUL");
+    li = ul.getElementsByTagName('li');
+    // Loop through all list items, and hide those who don't match the search query
+
+    for (i = 0; i < li.length; i++) {
+      if (li[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      }else {
+        li[i].style.display = "none";
+        $('.genreLi.is-active').css('display', 'block');
+      }
+    }
+
+  }
+  $('.genreName').click(function() {
+    $(this).toggleClass("is-active");
+  });
+
+
+
+
+
+
+
+
+  // TV Show Season Toggler ////////////////////////////
+  $('.season-container').find('.season-toggle').on('click', function(e) {
     e.preventDefault();
     $(this).closest('.season-container').find('table').toggleClass('is-hidden');
   });
 
 
-
-  jQuery(function(){
+  // Youtube Popup Function ////////////////////////////
+  jQuery(function() {
     jQuery("a.trailer-toggle").YouTubePopUp();
   });
-
-
-
   //End Doc Ready
 });
 
-$(window).load(function(){
-   // PAGE IS FULLY LOADED
-   // FADE OUT YOUR OVERLAYING DIV
+
+// Onload Function ////////////////////////////
+$(window).load(function() {
+  // PAGE IS FULLY LOADED
   $('#loadingOverlay').fadeOut();
+  console.log("Designed & Developed in partnership with LDK Creatives");
+
+
+  //End Onload
 });

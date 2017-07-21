@@ -655,6 +655,9 @@ h1.white, h2.white, h3.white, h4.white, h5.white, p.white, a.white, .card.media-
 }
 
 section#loadingOverlay {
+  position: fixed;
+  top: 0;
+  z-index: 9999;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -904,7 +907,7 @@ nav .back-links i:hover {
   background-color: #1c3549;
   margin-top: 0px;
   padding: 2em;
-  max-height: 150px;
+  max-height: 250px;
   overflow: scroll;
   overflow-x: hidden;
   overflow-y: auto;
@@ -935,6 +938,7 @@ nav .back-links i:hover {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin-bottom: 20px;
 }
 
 .mediaFilters .card-filtercard.star-card label.mdl-icon-toggle {
@@ -968,6 +972,7 @@ nav .back-links i:hover {
   pointer-events: none;
   color: #0E1A24;
   box-sizing: border-box;
+  text-align: center;
   padding: 10px;
   position: relative;
   top: -17px;
@@ -1014,6 +1019,85 @@ a#CloseFilters.is-active, .card.media-card .details .cta button#CloseFilters.is-
   overflow: hidden;
   padding: 0;
   max-width: 0px;
+}
+
+.star-card i.starFilter-icon {
+  color: #0E1A24;
+  opacity: 0.3;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  transition: all 400ms ease-in-out;
+}
+
+.star-card i.starFilter-icon.is-active {
+  color: #0074D9;
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+#actorFilterUL, #genreFilterUL {
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#actorFilterUL li, #genreFilterUL li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  border: 1px solid #ddd;
+  /* Add a border to all links */
+  margin-top: -1px;
+  /* Prevent double borders */
+  background-color: #FFFBFB;
+  /* Grey background color */
+  padding: 8px;
+  /* Add some padding */
+  text-decoration: none;
+  /* Remove default text underline */
+  color: #0E1A24;
+  /* Add a black text color */
+  display: block;
+  /* Make it into a block element to fill the whole list */
+  cursor: pointer;
+}
+
+#actorFilterUL li.is-active, #genreFilterUL li.is-active {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+#actorFilterUL li.header, #genreFilterUL li.header {
+  background-color: #e2e2e2;
+  /* Add a darker background color for headers */
+  cursor: default;
+  /* Change cursor style */
+}
+
+#actorFilterUL li.header.selected, #genreFilterUL li.header.selected {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+#actorFilterUL li:hover:not(.header), #genreFilterUL li:hover:not(.header) {
+  background-color: #eee;
+  /* Add a hover effect to all links, except for headers */
 }
 
 nav .notifications {
